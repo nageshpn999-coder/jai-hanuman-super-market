@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Jai Hanuman Super Market — Your Trusted Kirana Store in Makthal</title>
-<meta name="description" content="Sri Hanuman Super Market — your trusted kirana store for rice, atta, oil, dals, spices & every daily essential. Free same-day home delivery. Order on WhatsApp or call +91 99597 31120.">
-<meta name="keywords" content="kirana store, grocery delivery, rice, atta, cooking oil, Makthal, online kirana, daily essentials">
+<title>Sri Hanuman Super Market — Fresh Groceries Delivered in Makthal</title>
+<meta name="description" content="Sri Hanuman Super Market — fresh fruits, vegetables, grocery, dairy & daily essentials with free same-day home delivery. Order on WhatsApp or call +91 99597 31120.">
+<meta name="keywords" content="supermarket, grocery delivery, fresh vegetables, fruits, Makthal, kirana, online grocery">
 <meta name="theme-color" content="#2E7D32">
-<meta property="og:title" content="Jai Hanuman Super Market">
-<meta property="og:description" content="Your trusted kirana store for daily essentials. Free same-day delivery.">
+<meta property="og:title" content="Sri Hanuman Super Market">
+<meta property="og:description" content="Fresh groceries delivered to your doorstep. Free same-day delivery.">
 <meta property="og:type" content="website">
-<link rel="manifest" href='data:application/json,{"name":"Jai Hanuman Super Market","short_name":"JH Market","start_url":".","display":"standalone","background_color":"%23ffffff","theme_color":"%232E7D32","icons":[]}'>
+<link rel="manifest" href='data:application/json,{"name":"Sri Hanuman Super Market","short_name":"JH Market","start_url":".","display":"standalone","background_color":"%23ffffff","theme_color":"%232E7D32","icons":[]}'>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232E7D32'/><text x='50' y='68' font-size='52' text-anchor='middle'>🛒</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"GroceryStore","name":"Sri Hanuman Super Market (Kirana Store)","telephone":"+919959731120","priceRange":"₹","address":{"@type":"PostalAddress","streetAddress":"Main Road (edit in Contact page)","addressLocality":"Makthal","addressRegion":"Telangana","addressCountry":"IN"},"openingHours":"Mo-Su 07:00-21:30"}
+{"@context":"https://schema.org","@type":"GroceryStore","name":"Sri Hanuman Super Market","telephone":"+919959731120","priceRange":"₹","address":{"@type":"PostalAddress","streetAddress":"Main Road (edit in Contact page)","addressLocality":"Makthal","addressRegion":"Telangana","addressCountry":"IN"},"openingHours":"Mo-Su 07:00-21:30"}
 </script>
 <style>
 /* ============ DESIGN TOKENS ============ */
@@ -371,11 +371,11 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
   <div class="container hdr">
     <a class="logo" href="#" onclick="go('home');return false">
       <span class="logo-badge">🛒</span>
-      <span class="logo-txt">Jai Hanuman<small>Super Market</small></span>
+      <span class="logo-txt">Sri Hanuman<small>Super Market</small></span>
     </a>
     <div class="hdr-search" id="searchWrap">
       <span class="sicon">🔍</span>
-      <input id="searchInput" type="search" placeholder="Search rice, atta, oil, dal, tea…" aria-label="Search products" oninput="onSearch(this.value)">
+      <input id="searchInput" type="search" placeholder="Search rice, atta, oil, snacks…" aria-label="Search products" oninput="onSearch(this.value)">
     </div>
     <div class="hdr-acts">
       <button class="icon-btn mob-only" onclick="toggleSearch()" aria-label="Search">🔍</button>
@@ -388,10 +388,10 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
   <nav class="navrow container desk-only" id="topNav">
     <a href="#" data-nav="home" class="active" onclick="go('home');return false">Home</a>
     <a href="#" data-nav="shop" onclick="go('shop');return false">Shop All</a>
+    <a href="#" onclick="goCat('Fruits');return false">Fruits</a>
+    <a href="#" onclick="goCat('Vegetables');return false">Vegetables</a>
     <a href="#" onclick="goCat('Rice');return false">Rice</a>
-    <a href="#" onclick="goCat('Atta & Flour');return false">Atta</a>
-    <a href="#" onclick="goCat('Cooking Oil');return false">Oil</a>
-    <a href="#" onclick="goCat('Dal & Pulses');return false">Dals</a>
+    <a href="#" onclick="goCat('Dairy Products');return false">Dairy</a>
     <a href="#" onclick="goCat('Snacks');return false">Snacks</a>
     <a href="#" data-nav="contact" onclick="go('contact');return false">Contact</a>
     <a href="#" data-nav="admin" onclick="go('admin');return false">Admin</a>
@@ -409,22 +409,22 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
     <div class="container">
       <div class="hero-in">
         <div>
-          <span class="hero-eyebrow">🏪 Your neighbourhood kirana · Trusted since day one</span>
-          <h1>Your Trusted <em>Kirana Store</em> for Daily Essentials</h1>
-          <p class="sub">Rice, atta, oils, dals, spices, dairy and every daily essential — genuine branded products at honest kirana prices, delivered the same day to your home.</p>
+          <span class="hero-eyebrow">🌿 Farm-fresh every morning · Trusted since day one</span>
+          <h1>Fresh Groceries <em>Delivered</em> to Your Doorstep</h1>
+          <p class="sub">Fruits, vegetables, rice, dals, dairy and every daily essential — hand-picked for quality and delivered the same day, right to your home.</p>
           <div class="hero-ctas">
             <button class="btn btn-green" onclick="go('shop')">🛒 Shop Now</button>
             <a class="btn btn-ghost" href="tel:+919959731120">📞 Call Now</a>
-            <a class="btn btn-wa" href="https://wa.me/919959731120?text=Hi%20Jai%20Hanuman%20Super%20Market!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+            <a class="btn btn-wa" href="https://wa.me/919959731120?text=Hi%20Jai%20Hanuman%20Super%20Market!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> Order on WhatsApp</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="crate">
-            <span>🍚</span><span>🌾</span><span>🫒</span>
-            <span>🫘</span><span>🥛</span><span>☕</span>
-            <span>🧂</span><span>🍪</span><span>🫙</span>
+            <span>🍎</span><span>🥦</span><span>🥭</span>
+            <span>🍚</span><span>🥛</span><span>🍞</span>
+            <span>🧅</span><span>🍌</span><span>🫙</span>
           </div>
-          <div class="hero-chip chip1">✅ 100% Genuine Products</div>
+          <div class="hero-chip chip1">✅ 100% Fresh Quality</div>
           <div class="hero-chip chip2">⚡ Same-Day Delivery</div>
         </div>
       </div>
@@ -484,7 +484,7 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
     <div class="why-grid">
       <div class="why-card"><span class="em">🚚</span><b>Free Home Delivery</b><p>Free delivery on every order above ₹499, anywhere in town.</p></div>
       <div class="why-card"><span class="em">⚡</span><b>Same Day Delivery</b><p>Order before 6 PM and get it delivered the same evening.</p></div>
-      <div class="why-card"><span class="em">✅</span><b>Genuine Grocery Products</b><p>Only original branded stock — no duplicates, no expired items, ever.</p></div>
+      <div class="why-card"><span class="em">🌿</span><b>Fresh Quality Products</b><p>Fruits & vegetables sourced fresh from the mandi every morning.</p></div>
       <div class="why-card"><span class="em">🔒</span><b>Secure Payments</b><p>Pay by UPI, card or cash on delivery — 100% safe checkout.</p></div>
       <div class="why-card"><span class="em">↩️</span><b>Easy Returns</b><p>Not happy with an item? Instant replacement or refund.</p></div>
     </div>
@@ -559,7 +559,7 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
         <h3>Order Summary</h3>
         <div id="ckSummary"></div>
         <button class="btn btn-orange" style="width:100%;margin-top:12px" onclick="placeOrder()">✅ Place Order</button>
-        <button class="btn btn-wa" style="width:100%;margin-top:8px" onclick="orderOnWhatsApp()">💬 Send Order on WhatsApp</button>
+        <button class="btn btn-wa" style="width:100%;margin-top:8px" onclick="orderOnWhatsApp()"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> Send Order on WhatsApp</button>
       </div>
     </div>
   </div>
@@ -588,11 +588,11 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
         <h3>Get in touch</h3>
         <div class="contact-line"><span class="em">📞</span><span>+91 99597 31120<small>Phone — tap to call</small></span></div>
         <div class="contact-line"><span class="em">💬</span><span>+91 99597 31120<small>WhatsApp orders welcome</small></span></div>
-        <div class="contact-line"><span class="em">🏪</span><span id="storeAddress">Jai Hanuman Super Market, Main Road, Makthal, Narayanpet Dist., Telangana<small>Store address (editable in code — see CONFIG)</small></span></div>
+        <div class="contact-line"><span class="em">🏪</span><span id="storeAddress">Sri Hanuman Super Market, Main Road, Makthal, Narayanpet Dist., Telangana<small>Store address (editable in code — see CONFIG)</small></span></div>
         <div class="contact-line"><span class="em">🕘</span><span>7:00 AM – 9:30 PM<small>Open all 7 days</small></span></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
           <a class="btn btn-green" href="tel:+919959731120">📞 Click to Call</a>
-          <a class="btn btn-wa" href="https://wa.me/919959731120" target="_blank" rel="noopener">💬 WhatsApp Chat</a>
+          <a class="btn btn-wa" href="https://wa.me/919959731120" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> WhatsApp Chat</a>
         </div>
       </div>
       <div class="map-box">
@@ -619,7 +619,7 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
   <div class="container ft-in">
     <div class="ft-brand">
       <span class="logo-badge" style="display:inline-grid">🛒</span>
-      <h4 style="margin-top:10px"> Sri Hanuman Super Market</h4>
+      <h4 style="margin-top:10px">Sri Hanuman Super Market</h4>
       <p>Your neighbourhood supermarket — fresh groceries, honest prices and doorstep delivery for the whole family.</p>
     </div>
     <div>
@@ -655,14 +655,14 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
   <a class="bn" data-nav="account" href="#" onclick="go('account');return false"><span class="em">👤</span>Account</a>
 </nav>
 
-<a class="fab-wa" href="https://wa.me/919959731120?text=Hi!%20I%20want%20to%20order%20groceries." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<a class="fab-wa" href="https://wa.me/919959731120?text=Hi!%20I%20want%20to%20order%20groceries." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" fill="white" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg></a>
 
 <div class="toast" id="toast"></div>
 <div id="modalRoot"></div>
 
 <script>
 /* =====================================================================
-   SRI HANUMAN SUPER MARKET — app.js
+   JAI HANUMAN SUPER MARKET — app.js
    Sections: CONFIG · FIREBASE · DATA · STATE · HELPERS · RENDER ·
              CART · CHECKOUT · ACCOUNT · ADMIN · INFO · INIT
    ===================================================================== */
@@ -672,7 +672,7 @@ const CONFIG = {
   storeName: 'Sri Hanuman Super Market',
   phone: '+919959731120',
   whatsapp: '919959731120',
-  upiId: 'srihanuman@upi',            // EDIT: your UPI ID for direct UPI payments
+  upiId: 'jaihanuman@upi',            // EDIT: your UPI ID for direct UPI payments
   freeDeliveryAbove: 499,
   deliveryCharge: 40,
   gstPercent: 5,                       // shown as a line item on the bill
@@ -703,93 +703,77 @@ const store = {
 
 /* ============ DATA ============ */
 const CATEGORIES = [
-  ['Rice','🍚'],['Atta & Flour','🌾'],['Cooking Oil','🫒'],['Dal & Pulses','🫘'],['Spices & Masalas','🌶️'],
-  ['Sugar & Salt','🧂'],['Tea & Coffee','☕'],['Dairy Products','🥛'],['Bakery','🍞'],['Snacks','🍿'],
-  ['Biscuits','🍪'],['Chocolates','🍫'],['Beverages','🧃'],['Instant Foods','🍜'],['Dry Fruits & Nuts','🥜'],
-  ['Pickles','🫙'],['Sauces & Ketchup','🥫'],['Home Cleaning','🧹'],['Personal Care','🧴'],['Baby Care','🍼'],
-  ['Stationery','✏️'],['Pet Food','🐾']
+  ['Fruits','🍎'],['Vegetables','🥦'],['Rice','🍚'],['Atta & Flour','🌾'],['Cooking Oil','🫒'],
+  ['Dal & Pulses','🫘'],['Spices','🌶️'],['Dairy Products','🥛'],['Bakery','🍞'],['Snacks','🍿'],
+  ['Beverages','🧃'],['Biscuits','🍪'],['Chocolates','🍫'],['Frozen Foods','🧊'],['Personal Care','🧴'],
+  ['Home Cleaning','🧹'],['Baby Care','🍼'],['Stationery','✏️'],['Pet Food','🐾']
 ];
 // badge: deal | best | new | festival | combo  ·  stock: number (0 = out)
 const SEED_PRODUCTS = [
- {id:1, name:'Sona Masoori Rice', brand:'Sri Lalitha', wt:'25 kg', price:1349, mrp:1550, cat:'Rice', em:'🍚', stock:12, badge:'best', rating:4.8, pop:100},
- {id:2, name:'HMT Premium Rice', brand:'Kohinoor', wt:'10 kg', price:645, mrp:720, cat:'Rice', em:'🍚', stock:18, badge:'deal', rating:4.6, pop:90},
- {id:3, name:'Basmati Rice', brand:'India Gate', wt:'5 kg', price:589, mrp:699, cat:'Rice', em:'🍚', stock:10, badge:'festival', rating:4.7, pop:78},
- {id:4, name:'Idli Rava', brand:'Sri Lalitha', wt:'1 kg', price:52, mrp:62, cat:'Rice', em:'🍚', stock:26, badge:'new', rating:4.4, pop:62},
- {id:5, name:'Whole Wheat Atta', brand:'Aashirvaad', wt:'10 kg', price:435, mrp:480, cat:'Atta & Flour', em:'🌾', stock:22, badge:'best', rating:4.7, pop:95},
- {id:6, name:'Multigrain Atta', brand:'Pillsbury', wt:'5 kg', price:289, mrp:330, cat:'Atta & Flour', em:'🌾', stock:14, badge:'new', rating:4.4, pop:60},
- {id:7, name:'Besan (Gram Flour)', brand:'Rajdhani', wt:'1 kg', price:78, mrp:95, cat:'Atta & Flour', em:'🥣', stock:25, badge:'festival', rating:4.5, pop:68},
- {id:8, name:'Maida', brand:'Rajdhani', wt:'1 kg', price:48, mrp:58, cat:'Atta & Flour', em:'🌾', stock:30, badge:'', rating:4.3, pop:55},
- {id:9, name:'Sunflower Oil', brand:'Freedom', wt:'1 L', price:132, mrp:155, cat:'Cooking Oil', em:'🌻', stock:35, badge:'deal', rating:4.6, pop:97},
- {id:10,name:'Groundnut Oil (Filtered)', brand:'Gold Drop', wt:'1 L', price:189, mrp:215, cat:'Cooking Oil', em:'🥜', stock:16, badge:'', rating:4.7, pop:75},
- {id:11,name:'Pure Cow Ghee', brand:'Nandini', wt:'500 ml', price:329, mrp:365, cat:'Cooking Oil', em:'🫙', stock:9, badge:'festival', rating:4.9, pop:89},
- {id:12,name:'Palm Oil Pouch', brand:'Ruchi Gold', wt:'1 L', price:112, mrp:130, cat:'Cooking Oil', em:'🫒', stock:28, badge:'', rating:4.2, pop:58},
- {id:13,name:'Toor Dal (Kandi Pappu)', brand:'Sri Lalitha', wt:'1 kg', price:148, mrp:170, cat:'Dal & Pulses', em:'🫘', stock:28, badge:'best', rating:4.6, pop:93},
- {id:14,name:'Moong Dal', brand:'Tata Sampann', wt:'1 kg', price:135, mrp:158, cat:'Dal & Pulses', em:'🫘', stock:20, badge:'', rating:4.5, pop:72},
- {id:15,name:'Chana Dal', brand:'Tata Sampann', wt:'1 kg', price:98, mrp:115, cat:'Dal & Pulses', em:'🫘', stock:24, badge:'deal', rating:4.5, pop:74},
- {id:16,name:'Urad Dal (Minapappu)', brand:'Sri Lalitha', wt:'1 kg', price:142, mrp:165, cat:'Dal & Pulses', em:'🫘', stock:18, badge:'new', rating:4.6, pop:66},
- {id:17,name:'Red Chilli Powder', brand:'Everest', wt:'200 g', price:78, mrp:92, cat:'Spices & Masalas', em:'🌶️', stock:30, badge:'', rating:4.6, pop:82},
- {id:18,name:'Turmeric Powder', brand:'Everest', wt:'200 g', price:56, mrp:66, cat:'Spices & Masalas', em:'🟡', stock:32, badge:'best', rating:4.7, pop:84},
- {id:19,name:'Garam Masala', brand:'MDH', wt:'100 g', price:72, mrp:85, cat:'Spices & Masalas', em:'🧂', stock:18, badge:'', rating:4.6, pop:71},
- {id:20,name:'Sambar Powder', brand:'MTR', wt:'200 g', price:88, mrp:102, cat:'Spices & Masalas', em:'🌶️', stock:15, badge:'new', rating:4.5, pop:63},
- {id:21,name:'Sugar (Fine Grain)', brand:'Madhur', wt:'5 kg', price:225, mrp:255, cat:'Sugar & Salt', em:'🧂', stock:30, badge:'best', rating:4.6, pop:91},
- {id:22,name:'Iodised Salt', brand:'Tata Salt', wt:'1 kg', price:26, mrp:30, cat:'Sugar & Salt', em:'🧂', stock:50, badge:'', rating:4.7, pop:88},
- {id:23,name:'Jaggery (Bellam)', brand:'Local Made', wt:'1 kg', price:68, mrp:82, cat:'Sugar & Salt', em:'🟤', stock:20, badge:'festival', rating:4.5, pop:70},
- {id:24,name:'Crystal Rock Salt', brand:'Tata Salt', wt:'1 kg', price:42, mrp:50, cat:'Sugar & Salt', em:'🧂', stock:22, badge:'', rating:4.4, pop:52},
- {id:25,name:'Tea Powder', brand:'Red Label', wt:'500 g', price:245, mrp:275, cat:'Tea & Coffee', em:'🍵', stock:20, badge:'best', rating:4.7, pop:92},
- {id:26,name:'Filter Coffee', brand:'Bru', wt:'200 g', price:189, mrp:215, cat:'Tea & Coffee', em:'☕', stock:14, badge:'', rating:4.6, pop:69},
- {id:27,name:'Green Tea Bags', brand:'Lipton', wt:'25 bags', price:145, mrp:170, cat:'Tea & Coffee', em:'🍵', stock:12, badge:'new', rating:4.4, pop:54},
- {id:28,name:'Toned Milk', brand:'Vijaya', wt:'500 ml', price:26, mrp:28, cat:'Dairy Products', em:'🥛', stock:45, badge:'best', rating:4.7, pop:99},
- {id:29,name:'Fresh Curd', brand:'Vijaya', wt:'500 g', price:35, mrp:40, cat:'Dairy Products', em:'🥣', stock:26, badge:'', rating:4.6, pop:87},
- {id:30,name:'Paneer (Fresh)', brand:'Milky Mist', wt:'200 g', price:89, mrp:105, cat:'Dairy Products', em:'🧀', stock:12, badge:'new', rating:4.5, pop:76},
- {id:31,name:'Butter (Salted)', brand:'Amul', wt:'100 g', price:58, mrp:62, cat:'Dairy Products', em:'🧈', stock:20, badge:'', rating:4.8, pop:83},
- {id:32,name:'Sandwich Bread', brand:'Modern', wt:'400 g', price:42, mrp:48, cat:'Bakery', em:'🍞', stock:16, badge:'', rating:4.3, pop:79},
- {id:33,name:'Rusk Toast', brand:'Britannia', wt:'300 g', price:55, mrp:65, cat:'Bakery', em:'🥖', stock:22, badge:'deal', rating:4.4, pop:66},
- {id:34,name:'Aloo Bhujia', brand:'Haldiram', wt:'400 g', price:95, mrp:110, cat:'Snacks', em:'🍿', stock:28, badge:'best', rating:4.7, pop:90},
- {id:35,name:'Potato Chips (Masala)', brand:'Lays', wt:'90 g', price:35, mrp:40, cat:'Snacks', em:'🥔', stock:40, badge:'', rating:4.5, pop:88},
- {id:36,name:'Mixture (South Special)', brand:'Local Made', wt:'250 g', price:60, mrp:75, cat:'Snacks', em:'🥨', stock:15, badge:'new', rating:4.6, pop:64},
+ {id:1, name:'Fresh Apples (Shimla)', brand:'Farm Fresh', wt:'1 kg', price:129, mrp:160, cat:'Fruits', em:'🍎', stock:24, badge:'deal', rating:4.6, pop:98},
+ {id:2, name:'Banana (Yelakki)', brand:'Farm Fresh', wt:'1 dozen', price:48, mrp:60, cat:'Fruits', em:'🍌', stock:40, badge:'best', rating:4.7, pop:95},
+ {id:3, name:'Alphonso Mangoes', brand:'Ratnagiri', wt:'1 kg', price:349, mrp:420, cat:'Fruits', em:'🥭', stock:8, badge:'new', rating:4.9, pop:88},
+ {id:4, name:'Pomegranate (Anar)', brand:'Farm Fresh', wt:'500 g', price:95, mrp:120, cat:'Fruits', em:'🔴', stock:15, badge:'', rating:4.4, pop:70},
+ {id:5, name:'Tomatoes (Desi)', brand:'Local Mandi', wt:'1 kg', price:32, mrp:45, cat:'Vegetables', em:'🍅', stock:50, badge:'deal', rating:4.5, pop:97},
+ {id:6, name:'Onions', brand:'Local Mandi', wt:'1 kg', price:38, mrp:50, cat:'Vegetables', em:'🧅', stock:60, badge:'best', rating:4.6, pop:99},
+ {id:7, name:'Potatoes', brand:'Local Mandi', wt:'1 kg', price:30, mrp:40, cat:'Vegetables', em:'🥔', stock:55, badge:'best', rating:4.5, pop:96},
+ {id:8, name:'Ladies Finger (Bhindi)', brand:'Local Mandi', wt:'500 g', price:28, mrp:36, cat:'Vegetables', em:'🫛', stock:20, badge:'new', rating:4.3, pop:65},
+ {id:9, name:'Green Chillies', brand:'Local Mandi', wt:'250 g', price:18, mrp:24, cat:'Vegetables', em:'🌶️', stock:30, badge:'', rating:4.4, pop:80},
+ {id:10,name:'Sona Masoori Rice', brand:'Sri Lalitha', wt:'25 kg', price:1349, mrp:1550, cat:'Rice', em:'🍚', stock:12, badge:'best', rating:4.8, pop:100},
+ {id:11,name:'HMT Premium Rice', brand:'Kohinoor', wt:'10 kg', price:645, mrp:720, cat:'Rice', em:'🍚', stock:18, badge:'deal', rating:4.6, pop:85},
+ {id:12,name:'Basmati Rice', brand:'India Gate', wt:'5 kg', price:589, mrp:699, cat:'Rice', em:'🍚', stock:10, badge:'festival', rating:4.7, pop:78},
+ {id:13,name:'Whole Wheat Atta', brand:'Aashirvaad', wt:'10 kg', price:435, mrp:480, cat:'Atta & Flour', em:'🌾', stock:22, badge:'best', rating:4.7, pop:92},
+ {id:14,name:'Multigrain Atta', brand:'Pillsbury', wt:'5 kg', price:289, mrp:330, cat:'Atta & Flour', em:'🌾', stock:14, badge:'new', rating:4.4, pop:60},
+ {id:15,name:'Besan (Gram Flour)', brand:'Rajdhani', wt:'1 kg', price:78, mrp:95, cat:'Atta & Flour', em:'🥣', stock:25, badge:'festival', rating:4.5, pop:68},
+ {id:16,name:'Sunflower Oil', brand:'Freedom', wt:'1 L', price:132, mrp:155, cat:'Cooking Oil', em:'🌻', stock:35, badge:'deal', rating:4.6, pop:94},
+ {id:17,name:'Groundnut Oil (Filtered)', brand:'Gold Drop', wt:'1 L', price:189, mrp:215, cat:'Cooking Oil', em:'🥜', stock:16, badge:'', rating:4.7, pop:75},
+ {id:18,name:'Pure Cow Ghee', brand:'Nandini', wt:'500 ml', price:329, mrp:365, cat:'Cooking Oil', em:'🫙', stock:9, badge:'festival', rating:4.9, pop:89},
+ {id:19,name:'Toor Dal (Kandi Pappu)', brand:'Sri Lalitha', wt:'1 kg', price:148, mrp:170, cat:'Dal & Pulses', em:'🫘', stock:28, badge:'best', rating:4.6, pop:91},
+ {id:20,name:'Moong Dal', brand:'Tata Sampann', wt:'1 kg', price:135, mrp:158, cat:'Dal & Pulses', em:'🫘', stock:20, badge:'', rating:4.5, pop:72},
+ {id:21,name:'Chana Dal', brand:'Tata Sampann', wt:'1 kg', price:98, mrp:115, cat:'Dal & Pulses', em:'🫘', stock:24, badge:'deal', rating:4.5, pop:74},
+ {id:22,name:'Red Chilli Powder', brand:'Everest', wt:'200 g', price:78, mrp:92, cat:'Spices', em:'🌶️', stock:30, badge:'', rating:4.6, pop:82},
+ {id:23,name:'Turmeric Powder', brand:'Everest', wt:'200 g', price:56, mrp:66, cat:'Spices', em:'🟡', stock:32, badge:'best', rating:4.7, pop:84},
+ {id:24,name:'Garam Masala', brand:'MDH', wt:'100 g', price:72, mrp:85, cat:'Spices', em:'🧂', stock:18, badge:'', rating:4.6, pop:71},
+ {id:25,name:'Toned Milk', brand:'Vijaya', wt:'500 ml', price:26, mrp:28, cat:'Dairy Products', em:'🥛', stock:45, badge:'best', rating:4.7, pop:100},
+ {id:26,name:'Fresh Curd', brand:'Vijaya', wt:'500 g', price:35, mrp:40, cat:'Dairy Products', em:'🥣', stock:26, badge:'', rating:4.6, pop:87},
+ {id:27,name:'Paneer (Fresh)', brand:'Milky Mist', wt:'200 g', price:89, mrp:105, cat:'Dairy Products', em:'🧀', stock:12, badge:'new', rating:4.5, pop:76},
+ {id:28,name:'Butter (Salted)', brand:'Amul', wt:'100 g', price:58, mrp:62, cat:'Dairy Products', em:'🧈', stock:20, badge:'', rating:4.8, pop:83},
+ {id:29,name:'Sandwich Bread', brand:'Modern', wt:'400 g', price:42, mrp:48, cat:'Bakery', em:'🍞', stock:16, badge:'', rating:4.3, pop:79},
+ {id:30,name:'Rusk Toast', brand:'Britannia', wt:'300 g', price:55, mrp:65, cat:'Bakery', em:'🥖', stock:22, badge:'deal', rating:4.4, pop:66},
+ {id:31,name:'Aloo Bhujia', brand:'Haldiram', wt:'400 g', price:95, mrp:110, cat:'Snacks', em:'🍿', stock:28, badge:'best', rating:4.7, pop:90},
+ {id:32,name:'Potato Chips (Masala)', brand:'Lays', wt:'90 g', price:35, mrp:40, cat:'Snacks', em:'🥔', stock:40, badge:'', rating:4.5, pop:88},
+ {id:33,name:'Mixture (South Special)', brand:'Local Made', wt:'250 g', price:60, mrp:75, cat:'Snacks', em:'🥨', stock:15, badge:'new', rating:4.6, pop:64},
+ {id:34,name:'Mango Juice', brand:'Maaza', wt:'1.2 L', price:65, mrp:80, cat:'Beverages', em:'🧃', stock:30, badge:'deal', rating:4.5, pop:81},
+ {id:35,name:'Tea Powder', brand:'Red Label', wt:'500 g', price:245, mrp:275, cat:'Beverages', em:'🍵', stock:20, badge:'best', rating:4.7, pop:86},
+ {id:36,name:'Filter Coffee', brand:'Bru', wt:'200 g', price:189, mrp:215, cat:'Beverages', em:'☕', stock:14, badge:'', rating:4.6, pop:69},
  {id:37,name:'Marie Gold Biscuits', brand:'Britannia', wt:'600 g', price:78, mrp:90, cat:'Biscuits', em:'🍪', stock:34, badge:'', rating:4.5, pop:77},
  {id:38,name:'Parle-G Family Pack', brand:'Parle', wt:'800 g', price:75, mrp:85, cat:'Biscuits', em:'🍪', stock:38, badge:'best', rating:4.8, pop:93},
- {id:39,name:'Good Day Cashew', brand:'Britannia', wt:'600 g', price:95, mrp:110, cat:'Biscuits', em:'🍪', stock:24, badge:'deal', rating:4.6, pop:72},
- {id:40,name:'Dairy Milk Silk', brand:'Cadbury', wt:'150 g', price:165, mrp:180, cat:'Chocolates', em:'🍫', stock:18, badge:'festival', rating:4.8, pop:85},
- {id:41,name:'KitKat (4-Finger)', brand:'Nestlé', wt:'4 pack', price:110, mrp:120, cat:'Chocolates', em:'🍫', stock:25, badge:'', rating:4.6, pop:73},
- {id:42,name:'Mango Juice', brand:'Maaza', wt:'1.2 L', price:65, mrp:80, cat:'Beverages', em:'🧃', stock:30, badge:'deal', rating:4.5, pop:81},
- {id:43,name:'Soft Drink Bottle', brand:'Thums Up', wt:'750 ml', price:45, mrp:50, cat:'Beverages', em:'🥤', stock:36, badge:'', rating:4.4, pop:74},
- {id:44,name:'Maggi Noodles (12-pack)', brand:'Nestlé', wt:'12×70 g', price:168, mrp:180, cat:'Instant Foods', em:'🍜', stock:26, badge:'best', rating:4.7, pop:94},
- {id:45,name:'Poha (Flattened Rice)', brand:'Local Made', wt:'1 kg', price:58, mrp:70, cat:'Instant Foods', em:'🥣', stock:24, badge:'', rating:4.4, pop:61},
- {id:46,name:'Upma Rava (Sooji)', brand:'Sri Lalitha', wt:'1 kg', price:54, mrp:64, cat:'Instant Foods', em:'🥣', stock:28, badge:'new', rating:4.4, pop:59},
- {id:47,name:'Ready Dosa Mix', brand:'MTR', wt:'500 g', price:85, mrp:98, cat:'Instant Foods', em:'🍜', stock:14, badge:'', rating:4.5, pop:57},
- {id:48,name:'Cashew Nuts (W320)', brand:'JH Select', wt:'250 g', price:245, mrp:290, cat:'Dry Fruits & Nuts', em:'🥜', stock:12, badge:'festival', rating:4.8, pop:75},
- {id:49,name:'Almonds (Badam)', brand:'JH Select', wt:'250 g', price:210, mrp:250, cat:'Dry Fruits & Nuts', em:'🌰', stock:14, badge:'best', rating:4.8, pop:78},
- {id:50,name:'Raisins (Kismis)', brand:'JH Select', wt:'250 g', price:95, mrp:115, cat:'Dry Fruits & Nuts', em:'🍇', stock:18, badge:'', rating:4.6, pop:64},
- {id:51,name:'Avakaya Mango Pickle', brand:'Priya', wt:'300 g', price:110, mrp:128, cat:'Pickles', em:'🫙', stock:20, badge:'best', rating:4.7, pop:80},
- {id:52,name:'Gongura Pickle', brand:'Priya', wt:'300 g', price:115, mrp:132, cat:'Pickles', em:'🫙', stock:16, badge:'new', rating:4.7, pop:71},
- {id:53,name:'Lemon Pickle', brand:'Aachi', wt:'300 g', price:95, mrp:112, cat:'Pickles', em:'🍋', stock:14, badge:'', rating:4.5, pop:56},
- {id:54,name:'Tomato Ketchup', brand:'Kissan', wt:'950 g', price:135, mrp:155, cat:'Sauces & Ketchup', em:'🥫', stock:22, badge:'deal', rating:4.6, pop:76},
- {id:55,name:'Green Chilli Sauce', brand:'Chings', wt:'190 g', price:55, mrp:65, cat:'Sauces & Ketchup', em:'🥫', stock:18, badge:'', rating:4.4, pop:53},
- {id:56,name:'Mixed Fruit Jam', brand:'Kissan', wt:'500 g', price:145, mrp:165, cat:'Sauces & Ketchup', em:'🫙', stock:15, badge:'', rating:4.5, pop:60},
- {id:57,name:'Detergent Powder', brand:'Surf Excel', wt:'1 kg', price:135, mrp:160, cat:'Home Cleaning', em:'🧺', stock:24, badge:'deal', rating:4.6, pop:85},
- {id:58,name:'Dishwash Bar (3-pack)', brand:'Vim', wt:'3×200 g', price:60, mrp:72, cat:'Home Cleaning', em:'🧽', stock:32, badge:'', rating:4.5, pop:75},
- {id:59,name:'Floor Cleaner', brand:'Lizol', wt:'975 ml', price:189, mrp:225, cat:'Home Cleaning', em:'🧹', stock:14, badge:'', rating:4.5, pop:63},
- {id:60,name:'Bathing Soap (4-pack)', brand:'Lifebuoy', wt:'4×100 g', price:112, mrp:140, cat:'Personal Care', em:'🧼', stock:26, badge:'deal', rating:4.5, pop:80},
- {id:61,name:'Shampoo Bottle', brand:'Clinic Plus', wt:'340 ml', price:169, mrp:199, cat:'Personal Care', em:'🧴', stock:16, badge:'', rating:4.4, pop:67},
- {id:62,name:'Toothpaste', brand:'Colgate', wt:'200 g', price:98, mrp:118, cat:'Personal Care', em:'🪥', stock:30, badge:'best', rating:4.6, pop:83},
- {id:63,name:'Baby Diapers (M)', brand:'Pampers', wt:'42 count', price:499, mrp:599, cat:'Baby Care', em:'🍼', stock:8, badge:'', rating:4.7, pop:59},
- {id:64,name:'Baby Powder', brand:'Johnson\u2019s', wt:'200 g', price:145, mrp:170, cat:'Baby Care', em:'🍼', stock:12, badge:'', rating:4.6, pop:55},
- {id:65,name:'Notebooks (Pack of 6)', brand:'Classmate', wt:'6×172 pg', price:180, mrp:210, cat:'Stationery', em:'📓', stock:20, badge:'new', rating:4.5, pop:52},
- {id:66,name:'Ball Pens (Pack of 10)', brand:'Cello', wt:'10 pens', price:65, mrp:80, cat:'Stationery', em:'🖊️', stock:35, badge:'', rating:4.4, pop:57},
- {id:67,name:'Dog Food (Adult)', brand:'Pedigree', wt:'1.2 kg', price:230, mrp:265, cat:'Pet Food', em:'🐶', stock:9, badge:'', rating:4.6, pop:48},
- {id:68,name:'Cat Food (Ocean Fish)', brand:'Whiskas', wt:'1.2 kg', price:325, mrp:370, cat:'Pet Food', em:'🐱', stock:0, badge:'', rating:4.5, pop:44},
- {id:69,name:'Monthly Ration Combo', brand:'JH Combo', wt:'Rice 10kg + Atta 5kg + Oil 1L + Toor Dal 1kg', price:1399, mrp:1650, cat:'Rice', em:'📦', stock:10, badge:'combo', rating:4.8, pop:87},
- {id:70,name:'Breakfast Combo', brand:'JH Combo', wt:'Bread + Butter + Milk + Poha 1kg', price:159, mrp:195, cat:'Bakery', em:'📦', stock:14, badge:'combo', rating:4.6, pop:70},
- {id:71,name:'Pooja Essentials Combo', brand:'JH Combo', wt:'Ghee 200ml + Camphor + Agarbatti + Kumkum', price:249, mrp:310, cat:'Spices & Masalas', em:'🪔', stock:16, badge:'festival', rating:4.7, pop:66},
- {id:72,name:'Tiffin Snacks Combo', brand:'JH Combo', wt:'Chips + Bhujia + Biscuits + Juice', price:225, mrp:270, cat:'Snacks', em:'📦', stock:12, badge:'combo', rating:4.5, pop:61},
- {id:73,name:'Dry Fruits Festival Box', brand:'JH Select', wt:'500 g mixed', price:549, mrp:650, cat:'Dry Fruits & Nuts', em:'🪔', stock:7, badge:'festival', rating:4.8, pop:65},
- {id:74,name:'Cleaning Combo', brand:'JH Combo', wt:'Detergent + Dishbar + Floor Cleaner', price:349, mrp:420, cat:'Home Cleaning', em:'📦', stock:11, badge:'combo', rating:4.6, pop:56},
- {id:75,name:'Chai-Time Combo', brand:'JH Combo', wt:'Tea 500g + Sugar 1kg + Marie 600g + Rusk', price:389, mrp:455, cat:'Tea & Coffee', em:'📦', stock:13, badge:'combo', rating:4.7, pop:68}
+ {id:39,name:'Dairy Milk Silk', brand:'Cadbury', wt:'150 g', price:165, mrp:180, cat:'Chocolates', em:'🍫', stock:18, badge:'festival', rating:4.8, pop:85},
+ {id:40,name:'KitKat (4-Finger)', brand:'Nestlé', wt:'4 pack', price:110, mrp:120, cat:'Chocolates', em:'🍫', stock:25, badge:'', rating:4.6, pop:73},
+ {id:41,name:'Green Peas (Frozen)', brand:'Safal', wt:'500 g', price:79, mrp:95, cat:'Frozen Foods', em:'🧊', stock:12, badge:'new', rating:4.4, pop:58},
+ {id:42,name:'French Fries (Frozen)', brand:'McCain', wt:'420 g', price:99, mrp:115, cat:'Frozen Foods', em:'🍟', stock:10, badge:'', rating:4.5, pop:62},
+ {id:43,name:'Bathing Soap (4-pack)', brand:'Lifebuoy', wt:'4×100 g', price:112, mrp:140, cat:'Personal Care', em:'🧼', stock:26, badge:'deal', rating:4.5, pop:80},
+ {id:44,name:'Shampoo Bottle', brand:'Clinic Plus', wt:'340 ml', price:169, mrp:199, cat:'Personal Care', em:'🧴', stock:16, badge:'', rating:4.4, pop:67},
+ {id:45,name:'Toothpaste', brand:'Colgate', wt:'200 g', price:98, mrp:118, cat:'Personal Care', em:'🪥', stock:30, badge:'best', rating:4.6, pop:83},
+ {id:46,name:'Detergent Powder', brand:'Surf Excel', wt:'1 kg', price:135, mrp:160, cat:'Home Cleaning', em:'🧺', stock:24, badge:'deal', rating:4.6, pop:85},
+ {id:47,name:'Dishwash Bar (3-pack)', brand:'Vim', wt:'3×200 g', price:60, mrp:72, cat:'Home Cleaning', em:'🧽', stock:32, badge:'', rating:4.5, pop:75},
+ {id:48,name:'Floor Cleaner', brand:'Lizol', wt:'975 ml', price:189, mrp:225, cat:'Home Cleaning', em:'🧹', stock:14, badge:'', rating:4.5, pop:63},
+ {id:49,name:'Baby Diapers (M)', brand:'Pampers', wt:'42 count', price:499, mrp:599, cat:'Baby Care', em:'🍼', stock:8, badge:'', rating:4.7, pop:59},
+ {id:50,name:'Baby Powder', brand:'Johnson\u2019s', wt:'200 g', price:145, mrp:170, cat:'Baby Care', em:'🍼', stock:12, badge:'', rating:4.6, pop:55},
+ {id:51,name:'Notebooks (Pack of 6)', brand:'Classmate', wt:'6×172 pg', price:180, mrp:210, cat:'Stationery', em:'📓', stock:20, badge:'new', rating:4.5, pop:52},
+ {id:52,name:'Ball Pens (Pack of 10)', brand:'Cello', wt:'10 pens', price:65, mrp:80, cat:'Stationery', em:'🖊️', stock:35, badge:'', rating:4.4, pop:57},
+ {id:53,name:'Dog Food (Adult)', brand:'Pedigree', wt:'1.2 kg', price:230, mrp:265, cat:'Pet Food', em:'🐶', stock:9, badge:'', rating:4.6, pop:48},
+ {id:54,name:'Cat Food (Ocean Fish)', brand:'Whiskas', wt:'1.2 kg', price:325, mrp:370, cat:'Pet Food', em:'🐱', stock:0, badge:'', rating:4.5, pop:44},
+ {id:55,name:'Monthly Ration Combo', brand:'SH Combo', wt:'Rice 10kg + Atta 5kg + Oil 1L + Toor Dal 1kg', price:1399, mrp:1650, cat:'Rice', em:'📦', stock:10, badge:'combo', rating:4.8, pop:87},
+ {id:56,name:'Breakfast Combo', brand:'SH Combo', wt:'Bread + Butter + Milk + Eggs (6)', price:169, mrp:205, cat:'Bakery', em:'📦', stock:14, badge:'combo', rating:4.6, pop:70},
+ {id:57,name:'Pooja Essentials Combo', brand:'SH Combo', wt:'Ghee 200ml + Camphor + Agarbatti + Kumkum', price:249, mrp:310, cat:'Spices', em:'🪔', stock:16, badge:'festival', rating:4.7, pop:66},
+ {id:58,name:'Tiffin Snacks Combo', brand:'SH Combo', wt:'Chips + Bhujia + Biscuits + Juice', price:225, mrp:270, cat:'Snacks', em:'📦', stock:12, badge:'combo', rating:4.5, pop:61},
+ {id:59,name:'Dry Fruits Festival Box', brand:'SH Select', wt:'500 g mixed', price:549, mrp:650, cat:'Snacks', em:'🪔', stock:7, badge:'festival', rating:4.8, pop:65},
+ {id:60,name:'Cleaning Combo', brand:'SH Combo', wt:'Detergent + Dishbar + Floor Cleaner', price:349, mrp:420, cat:'Home Cleaning', em:'📦', stock:11, badge:'combo', rating:4.6, pop:56}
 ];
 const COUPONS = { 'FRESH10': {type:'pct', val:10, desc:'10% off'}, 'WELCOME50': {type:'flat', val:50, desc:'₹50 off'}, 'COMBO100': {type:'flat', val:100, min:999, desc:'₹100 off above ₹999'} };
 const REVIEWS = [
- {name:'Lakshmi Devi', av:'👩', when:'2 days ago', stars:5, txt:'All branded items at prices lower than the city stores. Delivery boy is very polite. Our whole street orders from here now!', ph:['🍚','🫒']},
+ {name:'Lakshmi Devi', av:'👩', when:'2 days ago', stars:5, txt:'Vegetables are always fresh, just like the mandi. Delivery boy is very polite. Our whole street orders from here now!', ph:['🍅','🥦']},
  {name:'Ravi Kumar', av:'👨', when:'1 week ago', stars:5, txt:'Ordered 25kg rice bag on WhatsApp, delivered within 2 hours. Best prices in town, better than the city supermarkets.', ph:['🍚']},
  {name:'Fathima Begum', av:'🧕', when:'2 weeks ago', stars:4, txt:'Monthly combo pack saves me at least ₹300 every month. Quality is same as branded stores. Very happy.', ph:['📦','🌾']},
  {name:'Srinivas Goud', av:'🧔', when:'3 weeks ago', stars:5, txt:'Same-day delivery is really useful for our hotel business. They never miss the evening slot.', ph:['🫒','🫘']},
@@ -797,18 +781,18 @@ const REVIEWS = [
 ];
 
 /* ============ STATE ============ */
-let PRODUCTS = store.get('jhk_products', SEED_PRODUCTS);
-let cart     = store.get('jhk_cart', {});        // {id: qty}
-let wishlist = store.get('jhk_wish', []);
-let orders   = store.get('jhk_orders', []);
-let user     = store.get('jhk_user', null);
-let users    = store.get('jhk_users', []);
-let addresses= store.get('jhk_addr', []);
+let PRODUCTS = store.get('jh_products', SEED_PRODUCTS);
+let cart     = store.get('jh_cart', {});        // {id: qty}
+let wishlist = store.get('jh_wish', []);
+let orders   = store.get('jh_orders', []);
+let user     = store.get('jh_user', null);
+let users    = store.get('jh_users', []);
+let addresses= store.get('jh_addr', []);
 let coupon   = null;
 let qtyDraft = {};                               // per-card qty selector
 let adminOn  = false;
 
-const save = () => { store.set('jhk_products', PRODUCTS); store.set('jhk_cart', cart); store.set('jhk_wish', wishlist); store.set('jhk_orders', orders); store.set('jhk_user', user); store.set('jhk_users', users); store.set('jhk_addr', addresses); };
+const save = () => { store.set('jh_products', PRODUCTS); store.set('jh_cart', cart); store.set('jh_wish', wishlist); store.set('jh_orders', orders); store.set('jh_user', user); store.set('jh_users', users); store.set('jh_addr', addresses); };
 const $ = id => document.getElementById(id);
 const rup = n => '₹' + Number(n).toLocaleString('en-IN');
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -837,11 +821,11 @@ function onSearch(v){ if(!$('page-shop')||$('page-shop').classList.contains('hid
 function toggleTheme(){
   const html=document.documentElement;
   const next = html.dataset.theme==='dark' ? 'light' : 'dark';
-  html.dataset.theme=next; store.set('jhk_theme', next);
+  html.dataset.theme=next; store.set('jh_theme', next);
   $('themeBtn').textContent = next==='dark' ? '☀️' : '🌙';
 }
 (function initTheme(){
-  const saved = store.get('jhk_theme', null);
+  const saved = store.get('jh_theme', null);
   const pref = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   const t = saved || pref;
   document.documentElement.dataset.theme=t;
@@ -899,7 +883,7 @@ function renderHome(){
     <p>“${r.txt}”</p>
     <div class="rev-photos">${r.ph.map(e=>`<span>${e}</span>`).join('')}</div>
   </div>`).join('');
-  const offers=['🔥 Today only: Sunflower Oil 15% OFF','📦 Monthly Ration Combo — save ₹251','🪔 Festival Bazaar is LIVE','🚚 FREE delivery above ₹499','💬 WhatsApp orders: 99597 31120','⭐ Sona Masoori 25kg at best price','☕ Chai-Time Combo — save ₹66'];
+  const offers=['🔥 Today only: Fresh Apples 19% OFF','📦 Monthly Ration Combo — save ₹251','🪔 Festival Bazaar is LIVE','🚚 FREE delivery above ₹499','💬 WhatsApp orders: 99597 31120','⭐ Sona Masoori 25kg at best price'];
   $('tickerTrack').innerHTML = [...offers,...offers].map(o=>`<span>${o}</span>`).join('');
 }
 
@@ -1033,7 +1017,7 @@ function placeOrder(){
   const pay=document.querySelector('input[name="pay"]:checked').value;
   const t=cartTotals();
   const finish=()=>{
-    const order={ id:'JH'+Date.now().toString().slice(-8), when:new Date().toLocaleString('en-IN'), items:orderLines(), totals:t, customer:c, pay, status:0, coupon };
+    const order={ id:'SH'+Date.now().toString().slice(-8), when:new Date().toLocaleString('en-IN'), items:orderLines(), totals:t, customer:c, pay, status:0, coupon };
     orders.unshift(order);
     order.items.forEach(it=>{ const p=PRODUCTS.find(x=>x.id===it.id); if(p) p.stock=Math.max(0,p.stock-it.qty); });
     if(c && !addresses.some(a=>a.addr===c.addr)) addresses.unshift({addr:c.addr,land:c.land,pin:c.pin});
@@ -1264,10 +1248,10 @@ function delProduct(id){
 
 /* ============ INFO PAGES ============ */
 const INFO = {
- about:`<h1 class="page-title">About Us</h1><p>Jai Hanuman Super Market is your neighbourhood family store — built on one simple promise: <b>city-supermarket variety at honest kirana prices</b>. From rice and atta to spices and snacks, we stock only genuine branded products across every aisle and deliver to your doorstep the same day.</p><p style="margin-top:10px">Whether you order on WhatsApp, over a phone call, or through this website, the same friendly team packs and delivers your groceries with care. 🙏</p>`,
+ about:`<h1 class="page-title">About Us</h1><p>Sri Hanuman Super Market is your neighbourhood family store — built on one simple promise: <b>city-supermarket quality at honest local prices</b>. Every morning we source fresh fruits and vegetables from the mandi, stock trusted brands across every aisle, and deliver to your doorstep the same day.</p><p style="margin-top:10px">Whether you order on WhatsApp, over a phone call, or through this website, the same friendly team packs and delivers your groceries with care. 🙏</p>`,
  privacy:`<h1 class="page-title">Privacy Policy</h1><p>We collect only the details needed to deliver your order — your name, mobile number and delivery address. We never sell or share your information with third parties. Payment details entered through Razorpay/UPI are processed securely by those providers and never stored by us. To have your data removed, call us at +91 99597 31120.</p>`,
- terms:`<h1 class="page-title">Terms & Conditions</h1><p>Prices are inclusive of listed taxes and may change with market rates. Orders placed before 6 PM qualify for same-day delivery within our service area. Free delivery applies on orders above ₹499. We reserve the right to limit quantities on offer items. By placing an order you agree to provide accurate contact and address details.</p>`,
- refund:`<h1 class="page-title">Refund Policy</h1><p>Not happy with any item? Tell our delivery person at the door or call us within 24 hours — we'll replace it or refund the amount, no questions asked. For prepaid orders, refunds reach your account within 3–5 working days. Any quality concern is resolved with instant replacement on the next delivery.</p>`,
+ terms:`<h1 class="page-title">Terms & Conditions</h1><p>Prices are inclusive of listed taxes and may change with market rates, especially for fresh produce. Orders placed before 6 PM qualify for same-day delivery within our service area. Free delivery applies on orders above ₹499. We reserve the right to limit quantities on offer items. By placing an order you agree to provide accurate contact and address details.</p>`,
+ refund:`<h1 class="page-title">Refund Policy</h1><p>Not happy with any item? Tell our delivery person at the door or call us within 24 hours — we'll replace it or refund the amount, no questions asked. For prepaid orders, refunds reach your account within 3–5 working days. Fresh produce concerns are resolved with instant replacement on the next delivery.</p>`,
  faq:`<h1 class="page-title">FAQ</h1>
  <div class="order-card"><b>Which areas do you deliver to?</b><p class="page-sub" style="margin:4px 0 0">Makthal town and nearby villages. Call us to confirm your area.</p></div>
  <div class="order-card"><b>What is the delivery time?</b><p class="page-sub" style="margin:4px 0 0">Orders before 6 PM are delivered the same evening; later orders arrive next morning.</p></div>
