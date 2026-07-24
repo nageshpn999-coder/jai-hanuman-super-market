@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sri Hanuman Super Market — Fresh Groceries Delivered in Makthal</title>
+<meta name="description" content="Sri Hanuman Super Market — fresh fruits, vegetables, grocery, dairy & daily essentials with free same-day home delivery. Order on WhatsApp or call +91 99597 31120.">
+<meta name="keywords" content="supermarket, grocery delivery, fresh vegetables, fruits, Makthal, kirana, online grocery">
+<meta name="theme-color" content="#2E7D32">
+<meta property="og:title" content="Sri Hanuman Super Market">
+<meta property="og:description" content="Fresh groceries delivered to your doorstep. Free same-day delivery.">
+<meta property="og:type" content="website">
+<link rel="manifest" href='data:application/json,{"name":"Sri Hanuman Super Market","short_name":"JH Market","start_url":".","display":"standalone","background_color":"%23ffffff","theme_color":"%232E7D32","icons":[]}'>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232E7D32'/><text x='50' y='68' font-size='52' text-anchor='middle'>🛒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GroceryStore","name":"Sri Hanuman Super Market","telephone":"+919959731120","priceRange":"₹","address":{"@type":"PostalAddress","streetAddress":"Main Road (edit in Contact page)","addressLocality":"Makthal","addressRegion":"Telangana","addressCountry":"IN"},"openingHours":"Mo-Su 07:00-21:30"}
+</script>
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root{
+  --green:#2E7D32; --green-dark:#1B5E20; --green-deep:#124016;
+  --green-tint:#E8F5E9; --green-soft:#F1F8F1;
+  --orange:#FF9800; --orange-dark:#EF6C00; --orange-tint:#FFF3E0;
+  --ink:#20301F; --ink-soft:#5B6A58; --line:#DFE8DD;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F6FAF5;
+  --red:#D84315; --star:#FFB300;
+  --radius:16px; --radius-sm:10px;
+  --shadow:0 6px 24px rgba(32,48,31,.09);
+  --shadow-lift:0 12px 32px rgba(32,48,31,.16);
+  --display:'Baloo 2',system-ui,sans-serif;
+  --body:'Mukta',system-ui,sans-serif;
+  --header-h:64px;
+}
+[data-theme="dark"]{
+  --ink:#E7EFE5; --ink-soft:#9DB29A; --line:#2C3A2B;
+  --bg:#121A12; --surface:#1A241A; --surface-2:#1F2C1F;
+  --green-tint:#1C2E1D; --green-soft:#182418; --orange-tint:#33280F;
+  --shadow:0 6px 24px rgba(0,0,0,.35); --shadow-lift:0 12px 32px rgba(0,0,0,.5);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px;transition:background .3s,color .3s}
+img{max-width:100%}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select,textarea{font-family:inherit;font-size:1rem;color:var(--ink)}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.dsp{font-family:var(--display);line-height:1.2}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.hide{display:none!important}
+::selection{background:var(--orange);color:#fff}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ============ HEADER ============ */
+header{position:sticky;top:0;z-index:60;background:var(--surface);box-shadow:0 2px 12px rgba(32,48,31,.08)}
+.topbar{background:var(--green-dark);color:#fff;font-size:.8rem;text-align:center;padding:5px 12px;font-weight:500}
+.topbar b{color:#FFD54F}
+.hdr{display:flex;align-items:center;gap:12px;height:var(--header-h)}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-badge{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--green),var(--green-dark));display:grid;place-items:center;font-size:22px;box-shadow:0 3px 10px rgba(46,125,50,.35)}
+.logo-txt{font-family:var(--display);font-weight:800;font-size:1.05rem;line-height:1.05;color:var(--green)}
+[data-theme="dark"] .logo-txt{color:#8BC98F}
+.logo-txt small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.14em;color:var(--orange-dark);text-transform:uppercase}
+.hdr-search{flex:1;position:relative;max-width:520px}
+.hdr-search input{width:100%;padding:10px 14px 10px 42px;border:2px solid var(--line);border-radius:999px;background:var(--surface-2);transition:border .2s}
+.hdr-search input:focus{border-color:var(--green);outline:none}
+.hdr-search .sicon{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.65}
+.hdr-acts{display:flex;align-items:center;gap:6px;margin-left:auto}
+.icon-btn{position:relative;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;transition:background .2s,transform .15s}
+.icon-btn:hover{background:var(--green-tint);transform:translateY(-1px)}
+.badge-dot{position:absolute;top:2px;right:2px;min-width:18px;height:18px;padding:0 4px;background:var(--orange);color:#fff;border-radius:999px;font-size:.68rem;font-weight:700;display:grid;place-items:center;font-family:var(--body)}
+.navrow{display:flex;gap:4px;overflow-x:auto;padding:0 12px 10px;scrollbar-width:none}
+.navrow::-webkit-scrollbar{display:none}
+.navrow a{white-space:nowrap;padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem;color:var(--ink-soft);transition:.2s}
+.navrow a:hover,.navrow a.active{background:var(--green);color:#fff}
+
+/* ============ OFFERS TICKER (signature) ============ */
+.ticker{background:linear-gradient(90deg,var(--orange),var(--orange-dark));color:#fff;overflow:hidden;position:relative}
+.ticker-track{display:flex;gap:48px;white-space:nowrap;padding:7px 0;font-weight:700;font-size:.85rem;animation:tick 28s linear infinite;width:max-content}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ============ HERO ============ */
+.hero{background:
+  radial-gradient(circle at 85% 15%,rgba(255,152,0,.18),transparent 45%),
+  radial-gradient(circle at 10% 90%,rgba(46,125,50,.14),transparent 50%),
+  linear-gradient(150deg,var(--green-soft),var(--surface));
+  overflow:hidden;position:relative}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;padding:44px 0 52px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--line);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.8rem;color:var(--green);box-shadow:var(--shadow);animation:pop .6s .1s both}
+.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;color:var(--green-dark);margin:16px 0 10px;animation:rise .7s .15s both}
+[data-theme="dark"] .hero h1{color:#A5D6A7}
+.hero h1 em{font-style:normal;color:var(--orange-dark);position:relative}
+.hero p.sub{color:var(--ink-soft);font-size:1.08rem;max-width:46ch;animation:rise .7s .28s both}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;animation:rise .7s .4s both}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--display);font-weight:700;font-size:1rem;padding:13px 24px;border-radius:14px;transition:transform .18s,box-shadow .18s,background .2s;border:2px solid transparent}
+.btn:active{transform:scale(.97)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(46,125,50,.35)}
+.btn-green:hover{background:var(--green-dark);transform:translateY(-2px)}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 6px 18px rgba(255,152,0,.4)}
+.btn-orange:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.btn-ghost{background:var(--surface);border-color:var(--green);color:var(--green)}
+.btn-ghost:hover{background:var(--green-tint);transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.4)}
+.btn-wa:hover{background:#1DA851;transform:translateY(-2px)}
+.hero-visual{position:relative;display:grid;place-items:center;animation:pop .8s .3s both}
+.crate{background:var(--surface);border-radius:26px;box-shadow:var(--shadow-lift);padding:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;transform:rotate(2deg)}
+.crate span{font-size:clamp(2.2rem,5vw,3.2rem);display:grid;place-items:center;background:var(--surface-2);border-radius:16px;aspect-ratio:1;animation:bob 3.5s ease-in-out infinite}
+.crate span:nth-child(2n){animation-delay:.6s}.crate span:nth-child(3n){animation-delay:1.2s}
+.hero-chip{position:absolute;background:var(--surface);border-radius:14px;box-shadow:var(--shadow-lift);padding:8px 14px;font-weight:700;font-size:.85rem;display:flex;gap:8px;align-items:center}
+.chip1{top:4%;left:-2%;color:var(--green);animation:bob 4s .5s ease-in-out infinite}
+.chip2{bottom:6%;right:-2%;color:var(--orange-dark);animation:bob 4s 1s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0;border-top:1.5px dashed var(--line)}
+.trust-strip div{display:flex;align-items:center;gap:9px;font-weight:600;font-size:.86rem;color:var(--ink-soft)}
+.trust-strip span{font-size:1.3rem}
+
+/* ============ SECTIONS ============ */
+section.block{padding:34px 0 8px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.sec-head h2{font-size:clamp(1.35rem,3vw,1.8rem);font-weight:800;color:var(--green-dark)}
+[data-theme="dark"] .sec-head h2{color:#A5D6A7}
+.sec-head .kick{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-dark)}
+.sec-head a{font-weight:700;color:var(--green);white-space:nowrap;font-size:.9rem}
+.sec-head a:hover{text-decoration:underline}
+
+/* category tiles */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px}
+.cat-tile{background:var(--surface);border:1.5px solid var(--line);border-radius:18px 18px 14px 14px;padding:14px 8px 10px;text-align:center;transition:.2s;cursor:pointer}
+.cat-tile:hover{border-color:var(--green);box-shadow:var(--shadow);transform:translateY(-3px)}
+.cat-tile .em{font-size:2rem;display:block;background:var(--green-tint);border-radius:50% 50% 45% 45%;width:56px;height:56px;line-height:56px;margin:0 auto 8px;transition:.25s}
+.cat-tile:hover .em{background:var(--orange-tint);transform:rotate(-6deg) scale(1.08)}
+.cat-tile b{font-size:.8rem;font-weight:700;display:block;line-height:1.2}
+
+/* product cards */
+.prod-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(178px,220px);gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:14px}
+.pcard{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:12px;position:relative;display:flex;flex-direction:column;gap:6px;transition:.22s;scroll-snap-align:start}
+.pcard:hover{box-shadow:var(--shadow-lift);transform:translateY(-4px);border-color:var(--green)}
+.pcard .pimg{background:var(--surface-2);border-radius:12px;display:grid;place-items:center;font-size:3.2rem;height:110px;position:relative;overflow:hidden}
+.pcard:hover .pimg{background:var(--green-tint)}
+.off-tag{position:absolute;top:8px;left:8px;background:var(--orange);color:#fff;font-size:.68rem;font-weight:800;padding:3px 8px;border-radius:999px;font-family:var(--body)}
+.wish{position:absolute;top:8px;right:8px;width:32px;height:32px;border-radius:50%;background:var(--surface);box-shadow:var(--shadow);display:grid;place-items:center;font-size:15px;transition:.2s;z-index:2}
+.wish:hover{transform:scale(1.15)}
+.wish.on{background:#FFEBEE;color:var(--red)}
+.pbrand{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+.pname{font-weight:700;font-size:.94rem;line-height:1.25;min-height:2.4em}
+.pmeta{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--ink-soft)}
+.pmeta .wt{background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-weight:600}
+.stars{color:var(--star);letter-spacing:1px;font-size:.75rem}
+.pprice{display:flex;align-items:baseline;gap:8px;margin-top:2px}
+.pprice .now{font-family:var(--display);font-weight:800;font-size:1.15rem;color:var(--green-dark)}
+[data-theme="dark"] .pprice .now{color:#A5D6A7}
+.pprice .mrp{text-decoration:line-through;color:var(--ink-soft);font-size:.82rem}
+.stock{font-size:.72rem;font-weight:700}
+.stock.in{color:var(--green)}.stock.low{color:var(--orange-dark)}.stock.out{color:var(--red)}
+.qty{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;width:max-content}
+.qty button{width:30px;height:30px;font-size:1.05rem;font-weight:700;background:var(--surface-2);transition:.15s}
+.qty button:hover{background:var(--green-tint);color:var(--green)}
+.qty span{min-width:32px;text-align:center;font-weight:700;font-size:.92rem}
+.pacts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.pacts .add{background:var(--green-tint);color:var(--green-dark);font-weight:800;border-radius:10px;padding:9px 4px;font-size:.85rem;border:1.5px solid transparent;transition:.18s;font-family:var(--display)}
+[data-theme="dark"] .pacts .add{color:#A5D6A7}
+.pacts .add:hover{background:var(--green);color:#fff}
+.pacts .buy{background:var(--orange);color:#fff;font-weight:800;border-radius:10px;padding:9px 4px;font-size:.85rem;transition:.18s;font-family:var(--display)}
+.pacts .buy:hover{background:var(--orange-dark)}
+.pacts .add:disabled,.pacts .buy:disabled{opacity:.45;cursor:not-allowed}
+
+/* combo / festival banners */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.offer-card{border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:6px;transition:.25s}
+.offer-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.offer-card .big-em{position:absolute;right:-8px;bottom:-14px;font-size:6.5rem;opacity:.28;transform:rotate(-8deg)}
+.offer-card h3{font-size:1.4rem;font-weight:800}
+.offer-card p{font-size:.9rem;opacity:.94;max-width:34ch}
+.offer-card .mini{display:inline-block;background:rgba(255,255,255,.22);backdrop-filter:blur(4px);border-radius:999px;padding:3px 12px;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;width:max-content}
+.oc-green{background:linear-gradient(120deg,var(--green),var(--green-dark))}
+.oc-orange{background:linear-gradient(120deg,var(--orange),var(--orange-dark))}
+.oc-festival{background:linear-gradient(120deg,#7B1FA2,#4A148C)}
+.oc-combo{background:linear-gradient(120deg,#00838F,#006064)}
+
+/* why choose us */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.why-card{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;transition:.2s}
+.why-card:hover{border-color:var(--orange);box-shadow:var(--shadow);transform:translateY(-3px)}
+.why-card .em{font-size:2.2rem;display:grid;place-items:center;width:64px;height:64px;margin:0 auto 10px;background:var(--orange-tint);border-radius:18px}
+.why-card b{font-family:var(--display);font-size:1.02rem;display:block;margin-bottom:4px}
+.why-card p{font-size:.85rem;color:var(--ink-soft)}
+
+/* reviews */
+.rev-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,320px);gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
+.rev-card{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:18px;scroll-snap-align:start;display:flex;flex-direction:column;gap:8px}
+.rev-card .who{display:flex;gap:10px;align-items:center}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:1.3rem;background:var(--green-tint)}
+.rev-card b{font-size:.95rem}
+.rev-card small{color:var(--ink-soft);display:block;font-size:.75rem}
+.rev-card p{font-size:.88rem;color:var(--ink-soft);font-style:italic}
+.rev-photos{display:flex;gap:6px}
+.rev-photos span{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;width:44px;height:44px;display:grid;place-items:center;font-size:1.3rem}
+
+/* ============ SHOP / FILTERS ============ */
+.shop-tools{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:18px}
+.shop-tools label{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:4px}
+.shop-tools select,.shop-tools input{width:100%;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface-2)}
+.shop-tools select:focus,.shop-tools input:focus{border-color:var(--green);outline:none}
+.result-count{font-size:.85rem;color:var(--ink-soft);margin:0 2px 12px;font-weight:600}
+
+/* ============ CART / CHECKOUT ============ */
+.page-title{font-size:clamp(1.5rem,4vw,2rem);font-weight:800;color:var(--green-dark);padding:26px 0 4px}
+[data-theme="dark"] .page-title{color:#A5D6A7}
+.page-sub{color:var(--ink-soft);margin-bottom:18px}
+.cart-layout{display:grid;grid-template-columns:1.6fr 1fr;gap:18px;align-items:start;padding-bottom:30px}
+.cart-list{display:flex;flex-direction:column;gap:10px}
+.cart-item{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:12px;display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;animation:rise .3s both}
+.cart-item .cimg{width:64px;height:64px;background:var(--surface-2);border-radius:12px;display:grid;place-items:center;font-size:2rem}
+.cart-item .cinfo b{display:block;font-size:.95rem;line-height:1.25}
+.cart-item .cinfo small{color:var(--ink-soft);font-size:.78rem}
+.cart-item .cright{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.cart-item .cprice{font-family:var(--display);font-weight:800;color:var(--green-dark)}
+[data-theme="dark"] .cart-item .cprice{color:#A5D6A7}
+.rm{color:var(--red);font-size:.78rem;font-weight:700}
+.rm:hover{text-decoration:underline}
+.summary{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:18px;position:sticky;top:calc(var(--header-h) + 14px)}
+.summary h3{font-size:1.15rem;margin-bottom:12px;font-weight:800}
+.sumrow{display:flex;justify-content:space-between;font-size:.92rem;padding:6px 0;color:var(--ink-soft)}
+.sumrow.total{border-top:2px dashed var(--line);margin-top:8px;padding-top:12px;font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--green-dark)}
+[data-theme="dark"] .sumrow.total{color:#A5D6A7}
+.sumrow .free{color:var(--green);font-weight:700}
+.sumrow .disc{color:var(--green);font-weight:700}
+.coupon-row{display:flex;gap:8px;margin:10px 0}
+.coupon-row input{flex:1;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface-2);text-transform:uppercase}
+.coupon-row button{background:var(--green);color:#fff;border-radius:10px;padding:0 16px;font-weight:800;font-family:var(--display)}
+.coupon-msg{font-size:.8rem;font-weight:700;min-height:1.2em}
+.coupon-msg.ok{color:var(--green)}.coupon-msg.err{color:var(--red)}
+.empty{padding:56px 16px;text-align:center;color:var(--ink-soft)}
+.empty .em{font-size:4rem;display:block;margin-bottom:8px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.78rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft)}
+.field input,.field textarea,.field select{padding:11px 13px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface-2)}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green);outline:none}
+.card-panel{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:14px}
+.card-panel h3{font-size:1.1rem;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.paymethods{display:grid;gap:8px}
+.pm{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:.18s;font-weight:600}
+.pm:hover{border-color:var(--green)}
+.pm input{accent-color:var(--green);width:18px;height:18px}
+.pm.sel{border-color:var(--green);background:var(--green-tint)}
+.pm .pm-em{font-size:1.3rem}
+.pm small{display:block;font-weight:500;color:var(--ink-soft);font-size:.76rem}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:30px}
+.map-box{border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:320px;background:var(--surface-2)}
+.map-box iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.contact-line{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line);font-weight:600}
+.contact-line:last-child{border:none}
+.contact-line .em{font-size:1.4rem;width:44px;height:44px;background:var(--green-tint);border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+.contact-line small{display:block;font-weight:500;color:var(--ink-soft);font-size:.76rem}
+
+/* ============ ACCOUNT / ADMIN ============ */
+.auth-box{max-width:420px;margin:30px auto;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.auth-box h2{font-weight:800;color:var(--green-dark);margin-bottom:4px}
+[data-theme="dark"] .auth-box h2{color:#A5D6A7}
+.auth-box .sw{font-size:.85rem;color:var(--ink-soft);margin-top:12px;text-align:center}
+.auth-box .sw button{color:var(--green);font-weight:800}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:14px 0;scrollbar-width:none}
+.tabs button{white-space:nowrap;padding:8px 16px;border-radius:999px;font-weight:700;font-size:.88rem;background:var(--surface-2);border:1.5px solid var(--line);transition:.18s}
+.tabs button.active{background:var(--green);border-color:var(--green);color:#fff}
+.order-card{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.order-card .oh{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.status-pill{font-size:.72rem;font-weight:800;padding:3px 12px;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+.st-placed{background:var(--orange-tint);color:var(--orange-dark)}
+.st-packed{background:#E3F2FD;color:#1565C0}
+.st-out{background:#F3E5F5;color:#7B1FA2}
+.st-done{background:var(--green-tint);color:var(--green-dark)}
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:12px}
+.track .step{text-align:center;font-size:.68rem;font-weight:700;color:var(--ink-soft);position:relative;padding-top:20px}
+.track .step::before{content:'';width:14px;height:14px;border-radius:50%;background:var(--line);position:absolute;top:0;left:50%;transform:translateX(-50%);transition:.3s}
+.track .step::after{content:'';height:3px;background:var(--line);position:absolute;top:5.5px;left:-50%;width:100%;z-index:-1}
+.track .step:first-child::after{display:none}
+.track .step.done{color:var(--green)}
+.track .step.done::before{background:var(--green)}
+.track .step.done::after{background:var(--green)}
+.admin-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.stat-card{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:16px}
+.stat-card .em{font-size:1.5rem}
+.stat-card b{font-family:var(--display);font-size:1.5rem;display:block;color:var(--green-dark)}
+[data-theme="dark"] .stat-card b{color:#A5D6A7}
+.stat-card small{color:var(--ink-soft);font-weight:600}
+table.admin-tbl{width:100%;border-collapse:collapse;font-size:.86rem}
+.admin-tbl th{text-align:left;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);padding:8px;border-bottom:2px solid var(--line)}
+.admin-tbl td{padding:8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.admin-tbl .act{color:var(--green);font-weight:700;margin-right:10px}
+.admin-tbl .act.del{color:var(--red)}
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);padding:8px}
+
+/* ============ FOOTER ============ */
+footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+.ft-in{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:24px;padding:38px 0 22px}
+.ft-in h4{color:#fff;font-family:var(--display);margin-bottom:10px;font-size:1rem}
+.ft-in a{display:block;padding:3.5px 0;font-size:.88rem;transition:.15s}
+.ft-in a:hover{color:var(--orange);transform:translateX(3px)}
+.ft-brand p{font-size:.86rem;max-width:32ch;margin-top:8px}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.15);padding:14px 0;font-size:.8rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* ============ BOTTOM NAV (mobile) ============ */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1.5px solid var(--line);display:none;z-index:70;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 20px rgba(32,48,31,.1)}
+.bottom-nav .bn{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 6px;font-size:.66rem;font-weight:700;color:var(--ink-soft);position:relative}
+.bottom-nav .bn .em{font-size:1.3rem;transition:.2s}
+.bottom-nav .bn.active{color:var(--green)}
+.bottom-nav .bn.active .em{transform:translateY(-2px) scale(1.12)}
+.bn .badge-dot{top:0;right:calc(50% - 22px)}
+
+/* floating WA */
+.fab-wa{position:fixed;right:16px;bottom:86px;z-index:65;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;font-size:1.7rem;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.5);transition:.2s;animation:pop .5s 1.2s both}
+.fab-wa:hover{transform:scale(1.1)}
+
+/* toast + modal */
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:11px 22px;border-radius:999px;font-weight:700;font-size:.9rem;opacity:0;transition:.3s;z-index:90;pointer-events:none;white-space:nowrap;box-shadow:var(--shadow-lift)}
+[data-theme="dark"] .toast{background:#E7EFE5;color:#121A12}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.modal-bg{position:fixed;inset:0;background:rgba(18,26,18,.55);backdrop-filter:blur(3px);z-index:80;display:grid;place-items:center;padding:16px;animation:fade .2s both}
+@keyframes fade{from{opacity:0}}
+.modal{background:var(--surface);border-radius:20px;max-width:520px;width:100%;max-height:86vh;overflow-y:auto;padding:22px;animation:pop .25s both}
+.modal h3{font-weight:800;color:var(--green-dark);margin-bottom:10px}
+[data-theme="dark"] .modal h3{color:#A5D6A7}
+.modal .close-x{float:right;font-size:1.3rem;width:36px;height:36px;border-radius:10px;background:var(--surface-2)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+.reveal.vis{opacity:1;transform:none}
+
+/* success page */
+.success-box{text-align:center;padding:56px 16px}
+.success-box .big{font-size:5rem;animation:pop .5s both}
+.success-box h2{font-size:1.8rem;font-weight:800;color:var(--green-dark);margin:10px 0 6px}
+[data-theme="dark"] .success-box h2{color:#A5D6A7}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;padding:30px 0 36px}
+  .hero-visual{order:-1}
+  .crate{padding:16px;gap:10px;transform:none}
+  .cart-layout,.contact-grid,.duo{grid-template-columns:1fr}
+  .ft-in{grid-template-columns:1fr 1fr}
+  .trust-strip{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .bottom-nav{display:flex}
+  .hdr{height:58px}
+  .hdr-search{position:fixed;left:0;right:0;top:0;background:var(--surface);padding:10px 14px;transform:translateY(-110%);transition:.25s;z-index:75;box-shadow:var(--shadow);max-width:none}
+  .hdr-search.open{transform:none}
+  .navrow{display:none}
+  .desk-only{display:none!important}
+  .form-grid{grid-template-columns:1fr}
+  .fab-wa{bottom:78px}
+  section.block{padding:24px 0 4px}
+}
+@media (min-width:761px){.mob-only{display:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="topbar">🚚 <b>FREE Home Delivery</b> on orders above ₹499 · Same-day delivery before 6 PM · 📞 +91 99597 31120</div>
+  <div class="container hdr">
+    <a class="logo" href="#" onclick="go('home');return false">
+      <span class="logo-badge">🛒</span>
+      <span class="logo-txt">Sri Hanuman<small>Super Market</small></span>
+    </a>
+    <div class="hdr-search" id="searchWrap">
+      <span class="sicon">🔍</span>
+      <input id="searchInput" type="search" placeholder="Search rice, atta, oil, snacks…" aria-label="Search products" oninput="onSearch(this.value)">
+    </div>
+    <div class="hdr-acts">
+      <button class="icon-btn mob-only" onclick="toggleSearch()" aria-label="Search">🔍</button>
+      <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode" id="themeBtn">🌙</button>
+      <button class="icon-btn desk-only" onclick="go('account')" aria-label="Account">👤</button>
+      <button class="icon-btn" onclick="openWishlist()" aria-label="Wishlist">❤️<span class="badge-dot hide" id="wishCount">0</span></button>
+      <button class="icon-btn" onclick="go('cart')" aria-label="Cart">🧺<span class="badge-dot hide" id="cartCount">0</span></button>
+    </div>
+  </div>
+  <nav class="navrow container desk-only" id="topNav">
+    <a href="#" data-nav="home" class="active" onclick="go('home');return false">Home</a>
+    <a href="#" data-nav="shop" onclick="go('shop');return false">Shop All</a>
+    <a href="#" onclick="goCat('Fruits');return false">Fruits</a>
+    <a href="#" onclick="goCat('Vegetables');return false">Vegetables</a>
+    <a href="#" onclick="goCat('Rice');return false">Rice</a>
+    <a href="#" onclick="goCat('Dairy Products');return false">Dairy</a>
+    <a href="#" onclick="goCat('Snacks');return false">Snacks</a>
+    <a href="#" data-nav="contact" onclick="go('contact');return false">Contact</a>
+    <a href="#" data-nav="admin" onclick="go('admin');return false">Admin</a>
+  </nav>
+</header>
+
+<!-- signature offers ticker -->
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<div id="page-home" class="page">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-in">
+        <div>
+          <span class="hero-eyebrow">🌿 Farm-fresh every morning · Trusted since day one</span>
+          <h1>Fresh Groceries <em>Delivered</em> to Your Doorstep</h1>
+          <p class="sub">Fruits, vegetables, rice, dals, dairy and every daily essential — hand-picked for quality and delivered the same day, right to your home.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-green" onclick="go('shop')">🛒 Shop Now</button>
+            <a class="btn btn-ghost" href="tel:+919959731120">📞 Call Now</a>
+            <a class="btn btn-wa" href="https://wa.me/919959731120?text=Hi%20Jai%20Hanuman%20Super%20Market!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> Order on WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="crate">
+            <span>🍎</span><span>🥦</span><span>🥭</span>
+            <span>🍚</span><span>🥛</span><span>🍞</span>
+            <span>🧅</span><span>🍌</span><span>🫙</span>
+          </div>
+          <div class="hero-chip chip1">✅ 100% Fresh Quality</div>
+          <div class="hero-chip chip2">⚡ Same-Day Delivery</div>
+        </div>
+      </div>
+      <div class="trust-strip">
+        <div><span>🚚</span> Free Home Delivery</div>
+        <div><span>⏱️</span> Same-Day Delivery</div>
+        <div><span>🔒</span> Secure Payments</div>
+        <div><span>↩️</span> Easy Returns</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Shop by aisle</div><h2>Top Categories</h2></div><a href="#" onclick="go('shop');return false">View all →</a></div>
+    <div class="cat-grid" id="homeCats"></div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Ends tonight</div><h2>🔥 Today's Deals</h2></div><a href="#" onclick="goBadge('deal');return false">See all →</a></div>
+    <div class="prod-row" id="rowDeals"></div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="duo">
+      <div class="offer-card oc-festival" onclick="goBadge('festival')" role="button" tabindex="0">
+        <span class="mini">Festival Offers</span>
+        <h3>Festive Savings Bazaar 🪔</h3>
+        <p>Pooja needs, sweets, dry fruits & ghee at special festival prices.</p>
+        <span class="big-em">🪔</span>
+      </div>
+      <div class="offer-card oc-combo" onclick="goBadge('combo')" role="button" tabindex="0">
+        <span class="mini">Combo Offers</span>
+        <h3>Monthly Ration Combos 📦</h3>
+        <p>Rice + Atta + Oil + Dal bundles — save up to ₹300 every month.</p>
+        <span class="big-em">📦</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Customer favourites</div><h2>⭐ Best Sellers</h2></div><a href="#" onclick="goBadge('best');return false">See all →</a></div>
+    <div class="prod-row" id="rowBest"></div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Just stocked</div><h2>🆕 New Arrivals</h2></div><a href="#" onclick="goBadge('new');return false">See all →</a></div>
+    <div class="prod-row" id="rowNew"></div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Bundle & save</div><h2>📦 Combo Offers</h2></div><a href="#" onclick="goBadge('combo');return false">See all →</a></div>
+    <div class="prod-row" id="rowCombo"></div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">Our promise</div><h2>Why Choose Us</h2></div></div>
+    <div class="why-grid">
+      <div class="why-card"><span class="em">🚚</span><b>Free Home Delivery</b><p>Free delivery on every order above ₹499, anywhere in town.</p></div>
+      <div class="why-card"><span class="em">⚡</span><b>Same Day Delivery</b><p>Order before 6 PM and get it delivered the same evening.</p></div>
+      <div class="why-card"><span class="em">🌿</span><b>Fresh Quality Products</b><p>Fruits & vegetables sourced fresh from the mandi every morning.</p></div>
+      <div class="why-card"><span class="em">🔒</span><b>Secure Payments</b><p>Pay by UPI, card or cash on delivery — 100% safe checkout.</p></div>
+      <div class="why-card"><span class="em">↩️</span><b>Easy Returns</b><p>Not happy with an item? Instant replacement or refund.</p></div>
+    </div>
+  </section>
+
+  <section class="block container reveal">
+    <div class="sec-head"><div><div class="kick">From our families to yours</div><h2>💬 Customer Reviews</h2></div></div>
+    <div class="rev-row" id="revRow"></div>
+  </section>
+</div>
+
+<!-- ============ SHOP ============ -->
+<div id="page-shop" class="page hide">
+  <div class="container">
+    <h1 class="page-title">Shop All Products</h1>
+    <p class="page-sub">Search, filter and sort across every aisle.</p>
+    <div class="shop-tools">
+      <div><label for="fCat">Category</label><select id="fCat" onchange="renderShop()"></select></div>
+      <div><label for="fBrand">Brand</label><select id="fBrand" onchange="renderShop()"></select></div>
+      <div><label for="fPrice">Price</label><select id="fPrice" onchange="renderShop()">
+        <option value="">Any price</option><option value="0-50">Under ₹50</option><option value="50-100">₹50 – ₹100</option><option value="100-250">₹100 – ₹250</option><option value="250-9999">Above ₹250</option></select></div>
+      <div><label for="fSort">Sort by</label><select id="fSort" onchange="renderShop()">
+        <option value="pop">Popular</option><option value="new">Latest</option><option value="lo">Price: Low to High</option><option value="hi">Price: High to Low</option></select></div>
+    </div>
+    <div class="result-count" id="resultCount"></div>
+    <div class="prod-grid" id="shopGrid"></div>
+  </div>
+</div>
+
+<!-- ============ CART ============ -->
+<div id="page-cart" class="page hide">
+  <div class="container">
+    <h1 class="page-title">🧺 Your Cart</h1>
+    <p class="page-sub">Review your basket before checkout.</p>
+    <div id="cartBody"></div>
+  </div>
+</div>
+
+<!-- ============ CHECKOUT ============ -->
+<div id="page-checkout" class="page hide">
+  <div class="container">
+    <h1 class="page-title">Checkout</h1>
+    <p class="page-sub">Almost done — tell us where to deliver.</p>
+    <div class="cart-layout">
+      <div>
+        <div class="card-panel">
+          <h3>👤 Customer Information</h3>
+          <div class="form-grid">
+            <div class="field"><label for="ckName">Full Name *</label><input id="ckName" placeholder="Your name" autocomplete="name"></div>
+            <div class="field"><label for="ckPhone">Mobile Number *</label><input id="ckPhone" type="tel" placeholder="10-digit mobile" maxlength="10" autocomplete="tel"></div>
+            <div class="field full"><label for="ckAddr">Delivery Address *</label><textarea id="ckAddr" rows="2" placeholder="House no, street, colony" autocomplete="street-address"></textarea></div>
+            <div class="field"><label for="ckLand">Landmark</label><input id="ckLand" placeholder="Near temple / school…"></div>
+            <div class="field"><label for="ckPin">Pincode *</label><input id="ckPin" maxlength="6" placeholder="6-digit pincode" autocomplete="postal-code"></div>
+            <div class="field full">
+              <label>📍 Delivery Location (GPS)</label>
+              <button type="button" class="btn btn-ghost" id="locBtn" style="width:100%" onclick="captureLocation()">📍 నా Location పంపండి · Share My Location</button>
+              <div id="locStatus" style="font-size:.82rem;font-weight:700;min-height:1.2em;margin-top:4px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-panel">
+          <h3>💳 Payment Method</h3>
+          <div class="paymethods" id="payMethods">
+            <label class="pm sel"><input type="radio" name="pay" value="cod" checked><span class="pm-em">💵</span><span>Cash on Delivery<small>Pay when your order arrives</small></span></label>
+            <label class="pm"><input type="radio" name="pay" value="upi"><span class="pm-em">📱</span><span>UPI<small>GPay · PhonePe · Paytm</small></span></label>
+            <label class="pm"><input type="radio" name="pay" value="card"><span class="pm-em">💳</span><span>Credit / Debit Card<small>Secured by Razorpay</small></span></label>
+            <label class="pm"><input type="radio" name="pay" value="netbanking"><span class="pm-em">🏦</span><span>Net Banking<small>All major banks · via Razorpay</small></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <h3>Order Summary</h3>
+        <div id="ckSummary"></div>
+        <button class="btn btn-orange" style="width:100%;margin-top:12px" onclick="placeOrder()">✅ Place Order</button>
+        <button class="btn btn-wa" style="width:100%;margin-top:8px" onclick="orderOnWhatsApp()"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> Send Order on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUCCESS ============ -->
+<div id="page-success" class="page hide">
+  <div class="container success-box">
+    <span class="big">🎉</span>
+    <h2>Order Placed Successfully!</h2>
+    <p class="page-sub" id="successMsg"></p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+      <button class="btn btn-green" onclick="go('account');setAccTab('orders')">📦 Track Order</button>
+      <button class="btn btn-ghost" onclick="go('shop')">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<div id="page-contact" class="page hide">
+  <div class="container">
+    <h1 class="page-title">📍 Visit or Contact Us</h1>
+    <p class="page-sub">We're open every day, 7:00 AM – 9:30 PM.</p>
+    <div class="contact-grid">
+      <div class="card-panel" style="margin:0">
+        <h3>Get in touch</h3>
+        <div class="contact-line"><span class="em">📞</span><span>+91 99597 31120<small>Phone — tap to call</small></span></div>
+        <div class="contact-line"><span class="em">💬</span><span>+91 99597 31120<small>WhatsApp orders welcome</small></span></div>
+        <div class="contact-line"><span class="em">🏪</span><span id="storeAddress">Sri Hanuman Super Market, Main Road, Makthal, Narayanpet Dist., Telangana<small>Store address (editable in code — see CONFIG)</small></span></div>
+        <div class="contact-line"><span class="em">🕘</span><span>7:00 AM – 9:30 PM<small>Open all 7 days</small></span></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+          <a class="btn btn-green" href="tel:+919959731120">📞 Click to Call</a>
+          <a class="btn btn-wa" href="https://wa.me/919959731120" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> WhatsApp Chat</a>
+        </div>
+      </div>
+      <div class="map-box">
+        <!-- EDIT: replace the q= value with your exact store location or paste your Google Maps embed code -->
+        <iframe id="gmap" title="Store location on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Makthal,+Narayanpet,+Telangana&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ACCOUNT ============ -->
+<div id="page-account" class="page hide"><div class="container" id="accountBody"></div></div>
+
+<!-- ============ ADMIN ============ -->
+<div id="page-admin" class="page hide"><div class="container" id="adminBody"></div></div>
+
+<!-- ============ INFO PAGES ============ -->
+<div id="page-info" class="page hide"><div class="container" style="max-width:780px"><div id="infoBody" style="padding:26px 0 40px"></div></div></div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container ft-in">
+    <div class="ft-brand">
+      <span class="logo-badge" style="display:inline-grid">🛒</span>
+      <h4 style="margin-top:10px">Sri Hanuman Super Market</h4>
+      <p>Your neighbourhood supermarket — fresh groceries, honest prices and doorstep delivery for the whole family.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#" onclick="showInfo('about');return false">About Us</a>
+      <a href="#" onclick="go('contact');return false">Contact Us</a>
+      <a href="#" onclick="showInfo('faq');return false">FAQ</a>
+    </div>
+    <div>
+      <h4>Policies</h4>
+      <a href="#" onclick="showInfo('privacy');return false">Privacy Policy</a>
+      <a href="#" onclick="showInfo('terms');return false">Terms & Conditions</a>
+      <a href="#" onclick="showInfo('refund');return false">Refund Policy</a>
+    </div>
+    <div>
+      <h4>Reach us</h4>
+      <a href="tel:+919959731120">📞 +91 99597 31120</a>
+      <a href="https://wa.me/919959731120" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+      <a href="#" onclick="go('admin');return false">🔐 Admin Login</a>
+    </div>
+  </div>
+  <div class="container ft-bottom">
+    <span>© 2026 Sri Hanuman Super Market. All rights reserved.</span>
+    <span>Made with 💚 for our customers</span>
+  </div>
+</footer>
+
+<!-- bottom nav (mobile) -->
+<nav class="bottom-nav" aria-label="Bottom navigation">
+  <a class="bn active" data-nav="home" href="#" onclick="go('home');return false"><span class="em">🏠</span>Home</a>
+  <a class="bn" data-nav="shop" href="#" onclick="go('shop');return false"><span class="em">🗂️</span>Categories</a>
+  <a class="bn" data-nav="cart" href="#" onclick="go('cart');return false"><span class="em">🧺</span>Cart<span class="badge-dot hide" id="cartCountM">0</span></a>
+  <a class="bn" data-nav="account" href="#" onclick="go('account');return false"><span class="em">👤</span>Account</a>
+</nav>
+
+<a class="fab-wa" href="https://wa.me/919959731120?text=Hi!%20I%20want%20to%20order%20groceries." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" fill="white" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg></a>
+
+<div class="toast" id="toast"></div>
+<div id="modalRoot"></div>
+
+<script>
+/* =====================================================================
+   JAI HANUMAN SUPER MARKET — app.js
+   Sections: CONFIG · FIREBASE · DATA · STATE · HELPERS · RENDER ·
+             CART · CHECKOUT · ACCOUNT · ADMIN · INFO · INIT
+   ===================================================================== */
+
+/* ============ CONFIG (edit these) ============ */
+const CONFIG = {
+  storeName: 'Sri Hanuman Super Market',
+  phone: '+919959731120',
+  whatsapp: '919959731120',
+  upiId: 'jaihanuman@upi',            // EDIT: your UPI ID for direct UPI payments
+  freeDeliveryAbove: 499,
+  deliveryCharge: 40,
+  gstPercent: 5,                       // shown as a line item on the bill
+  razorpayKey: 'rzp_test_XXXXXXXXXXXX',// EDIT: your Razorpay Key ID (dashboard.razorpay.com)
+  adminPass: 'admin123',               // EDIT: change before going live (or use Firebase Auth roles)
+  address: 'Main Road, Makthal, Narayanpet District, Telangana'
+};
+
+/* ============ FIREBASE (optional — enables real login, cloud orders, storage)
+   1. Create a project at console.firebase.google.com
+   2. Enable Authentication (Phone/Email), Firestore, Storage
+   3. Paste your config below and set FIREBASE_ENABLED = true
+   4. Add the SDK <script> tags listed in the deployment notes
+   The site runs fully in local/demo mode when disabled. */
+const FIREBASE_ENABLED = false;
+const firebaseConfig = {
+  apiKey: 'YOUR_API_KEY', authDomain: 'YOUR_PROJECT.firebaseapp.com',
+  projectId: 'YOUR_PROJECT', storageBucket: 'YOUR_PROJECT.appspot.com',
+  messagingSenderId: 'XXXX', appId: 'XXXX'
+};
+
+/* ============ SAFE STORAGE (works even where localStorage is blocked) ============ */
+const mem = {};
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : (k in mem ? mem[k] : d); }catch(e){ return k in mem ? mem[k] : d; } },
+  set(k, v){ mem[k] = v; try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+
+/* ============ DATA ============ */
+const CATEGORIES = [
+  ['Fruits','🍎'],['Vegetables','🥦'],['Rice','🍚'],['Atta & Flour','🌾'],['Cooking Oil','🫒'],
+  ['Dal & Pulses','🫘'],['Spices','🌶️'],['Dairy Products','🥛'],['Bakery','🍞'],['Snacks','🍿'],
+  ['Beverages','🧃'],['Biscuits','🍪'],['Chocolates','🍫'],['Frozen Foods','🧊'],['Personal Care','🧴'],
+  ['Home Cleaning','🧹'],['Baby Care','🍼'],['Stationery','✏️'],['Pet Food','🐾']
+];
+// badge: deal | best | new | festival | combo  ·  stock: number (0 = out)
+const SEED_PRODUCTS = [
+ {id:1, name:'Fresh Apples (Shimla)', brand:'Farm Fresh', wt:'1 kg', price:129, mrp:160, cat:'Fruits', em:'🍎', stock:24, badge:'deal', rating:4.6, pop:98},
+ {id:2, name:'Banana (Yelakki)', brand:'Farm Fresh', wt:'1 dozen', price:48, mrp:60, cat:'Fruits', em:'🍌', stock:40, badge:'best', rating:4.7, pop:95},
+ {id:3, name:'Alphonso Mangoes', brand:'Ratnagiri', wt:'1 kg', price:349, mrp:420, cat:'Fruits', em:'🥭', stock:8, badge:'new', rating:4.9, pop:88},
+ {id:4, name:'Pomegranate (Anar)', brand:'Farm Fresh', wt:'500 g', price:95, mrp:120, cat:'Fruits', em:'🔴', stock:15, badge:'', rating:4.4, pop:70},
+ {id:5, name:'Tomatoes (Desi)', brand:'Local Mandi', wt:'1 kg', price:32, mrp:45, cat:'Vegetables', em:'🍅', stock:50, badge:'deal', rating:4.5, pop:97},
+ {id:6, name:'Onions', brand:'Local Mandi', wt:'1 kg', price:38, mrp:50, cat:'Vegetables', em:'🧅', stock:60, badge:'best', rating:4.6, pop:99},
+ {id:7, name:'Potatoes', brand:'Local Mandi', wt:'1 kg', price:30, mrp:40, cat:'Vegetables', em:'🥔', stock:55, badge:'best', rating:4.5, pop:96},
+ {id:8, name:'Ladies Finger (Bhindi)', brand:'Local Mandi', wt:'500 g', price:28, mrp:36, cat:'Vegetables', em:'🫛', stock:20, badge:'new', rating:4.3, pop:65},
+ {id:9, name:'Green Chillies', brand:'Local Mandi', wt:'250 g', price:18, mrp:24, cat:'Vegetables', em:'🌶️', stock:30, badge:'', rating:4.4, pop:80},
+ {id:10,name:'Sona Masoori Rice', brand:'Sri Lalitha', wt:'25 kg', price:1349, mrp:1550, cat:'Rice', em:'🍚', stock:12, badge:'best', rating:4.8, pop:100},
+ {id:11,name:'HMT Premium Rice', brand:'Kohinoor', wt:'10 kg', price:645, mrp:720, cat:'Rice', em:'🍚', stock:18, badge:'deal', rating:4.6, pop:85},
+ {id:12,name:'Basmati Rice', brand:'India Gate', wt:'5 kg', price:589, mrp:699, cat:'Rice', em:'🍚', stock:10, badge:'festival', rating:4.7, pop:78},
+ {id:13,name:'Whole Wheat Atta', brand:'Aashirvaad', wt:'10 kg', price:435, mrp:480, cat:'Atta & Flour', em:'🌾', stock:22, badge:'best', rating:4.7, pop:92},
+ {id:14,name:'Multigrain Atta', brand:'Pillsbury', wt:'5 kg', price:289, mrp:330, cat:'Atta & Flour', em:'🌾', stock:14, badge:'new', rating:4.4, pop:60},
+ {id:15,name:'Besan (Gram Flour)', brand:'Rajdhani', wt:'1 kg', price:78, mrp:95, cat:'Atta & Flour', em:'🥣', stock:25, badge:'festival', rating:4.5, pop:68},
+ {id:16,name:'Sunflower Oil', brand:'Freedom', wt:'1 L', price:132, mrp:155, cat:'Cooking Oil', em:'🌻', stock:35, badge:'deal', rating:4.6, pop:94},
+ {id:17,name:'Groundnut Oil (Filtered)', brand:'Gold Drop', wt:'1 L', price:189, mrp:215, cat:'Cooking Oil', em:'🥜', stock:16, badge:'', rating:4.7, pop:75},
+ {id:18,name:'Pure Cow Ghee', brand:'Nandini', wt:'500 ml', price:329, mrp:365, cat:'Cooking Oil', em:'🫙', stock:9, badge:'festival', rating:4.9, pop:89},
+ {id:19,name:'Toor Dal (Kandi Pappu)', brand:'Sri Lalitha', wt:'1 kg', price:148, mrp:170, cat:'Dal & Pulses', em:'🫘', stock:28, badge:'best', rating:4.6, pop:91},
+ {id:20,name:'Moong Dal', brand:'Tata Sampann', wt:'1 kg', price:135, mrp:158, cat:'Dal & Pulses', em:'🫘', stock:20, badge:'', rating:4.5, pop:72},
+ {id:21,name:'Chana Dal', brand:'Tata Sampann', wt:'1 kg', price:98, mrp:115, cat:'Dal & Pulses', em:'🫘', stock:24, badge:'deal', rating:4.5, pop:74},
+ {id:22,name:'Red Chilli Powder', brand:'Everest', wt:'200 g', price:78, mrp:92, cat:'Spices', em:'🌶️', stock:30, badge:'', rating:4.6, pop:82},
+ {id:23,name:'Turmeric Powder', brand:'Everest', wt:'200 g', price:56, mrp:66, cat:'Spices', em:'🟡', stock:32, badge:'best', rating:4.7, pop:84},
+ {id:24,name:'Garam Masala', brand:'MDH', wt:'100 g', price:72, mrp:85, cat:'Spices', em:'🧂', stock:18, badge:'', rating:4.6, pop:71},
+ {id:25,name:'Toned Milk', brand:'Vijaya', wt:'500 ml', price:26, mrp:28, cat:'Dairy Products', em:'🥛', stock:45, badge:'best', rating:4.7, pop:100},
+ {id:26,name:'Fresh Curd', brand:'Vijaya', wt:'500 g', price:35, mrp:40, cat:'Dairy Products', em:'🥣', stock:26, badge:'', rating:4.6, pop:87},
+ {id:27,name:'Paneer (Fresh)', brand:'Milky Mist', wt:'200 g', price:89, mrp:105, cat:'Dairy Products', em:'🧀', stock:12, badge:'new', rating:4.5, pop:76},
+ {id:28,name:'Butter (Salted)', brand:'Amul', wt:'100 g', price:58, mrp:62, cat:'Dairy Products', em:'🧈', stock:20, badge:'', rating:4.8, pop:83},
+ {id:29,name:'Sandwich Bread', brand:'Modern', wt:'400 g', price:42, mrp:48, cat:'Bakery', em:'🍞', stock:16, badge:'', rating:4.3, pop:79},
+ {id:30,name:'Rusk Toast', brand:'Britannia', wt:'300 g', price:55, mrp:65, cat:'Bakery', em:'🥖', stock:22, badge:'deal', rating:4.4, pop:66},
+ {id:31,name:'Aloo Bhujia', brand:'Haldiram', wt:'400 g', price:95, mrp:110, cat:'Snacks', em:'🍿', stock:28, badge:'best', rating:4.7, pop:90},
+ {id:32,name:'Potato Chips (Masala)', brand:'Lays', wt:'90 g', price:35, mrp:40, cat:'Snacks', em:'🥔', stock:40, badge:'', rating:4.5, pop:88},
+ {id:33,name:'Mixture (South Special)', brand:'Local Made', wt:'250 g', price:60, mrp:75, cat:'Snacks', em:'🥨', stock:15, badge:'new', rating:4.6, pop:64},
+ {id:34,name:'Mango Juice', brand:'Maaza', wt:'1.2 L', price:65, mrp:80, cat:'Beverages', em:'🧃', stock:30, badge:'deal', rating:4.5, pop:81},
+ {id:35,name:'Tea Powder', brand:'Red Label', wt:'500 g', price:245, mrp:275, cat:'Beverages', em:'🍵', stock:20, badge:'best', rating:4.7, pop:86},
+ {id:36,name:'Filter Coffee', brand:'Bru', wt:'200 g', price:189, mrp:215, cat:'Beverages', em:'☕', stock:14, badge:'', rating:4.6, pop:69},
+ {id:37,name:'Marie Gold Biscuits', brand:'Britannia', wt:'600 g', price:78, mrp:90, cat:'Biscuits', em:'🍪', stock:34, badge:'', rating:4.5, pop:77},
+ {id:38,name:'Parle-G Family Pack', brand:'Parle', wt:'800 g', price:75, mrp:85, cat:'Biscuits', em:'🍪', stock:38, badge:'best', rating:4.8, pop:93},
+ {id:39,name:'Dairy Milk Silk', brand:'Cadbury', wt:'150 g', price:165, mrp:180, cat:'Chocolates', em:'🍫', stock:18, badge:'festival', rating:4.8, pop:85},
+ {id:40,name:'KitKat (4-Finger)', brand:'Nestlé', wt:'4 pack', price:110, mrp:120, cat:'Chocolates', em:'🍫', stock:25, badge:'', rating:4.6, pop:73},
+ {id:41,name:'Green Peas (Frozen)', brand:'Safal', wt:'500 g', price:79, mrp:95, cat:'Frozen Foods', em:'🧊', stock:12, badge:'new', rating:4.4, pop:58},
+ {id:42,name:'French Fries (Frozen)', brand:'McCain', wt:'420 g', price:99, mrp:115, cat:'Frozen Foods', em:'🍟', stock:10, badge:'', rating:4.5, pop:62},
+ {id:43,name:'Bathing Soap (4-pack)', brand:'Lifebuoy', wt:'4×100 g', price:112, mrp:140, cat:'Personal Care', em:'🧼', stock:26, badge:'deal', rating:4.5, pop:80},
+ {id:44,name:'Shampoo Bottle', brand:'Clinic Plus', wt:'340 ml', price:169, mrp:199, cat:'Personal Care', em:'🧴', stock:16, badge:'', rating:4.4, pop:67},
+ {id:45,name:'Toothpaste', brand:'Colgate', wt:'200 g', price:98, mrp:118, cat:'Personal Care', em:'🪥', stock:30, badge:'best', rating:4.6, pop:83},
+ {id:46,name:'Detergent Powder', brand:'Surf Excel', wt:'1 kg', price:135, mrp:160, cat:'Home Cleaning', em:'🧺', stock:24, badge:'deal', rating:4.6, pop:85},
+ {id:47,name:'Dishwash Bar (3-pack)', brand:'Vim', wt:'3×200 g', price:60, mrp:72, cat:'Home Cleaning', em:'🧽', stock:32, badge:'', rating:4.5, pop:75},
+ {id:48,name:'Floor Cleaner', brand:'Lizol', wt:'975 ml', price:189, mrp:225, cat:'Home Cleaning', em:'🧹', stock:14, badge:'', rating:4.5, pop:63},
+ {id:49,name:'Baby Diapers (M)', brand:'Pampers', wt:'42 count', price:499, mrp:599, cat:'Baby Care', em:'🍼', stock:8, badge:'', rating:4.7, pop:59},
+ {id:50,name:'Baby Powder', brand:'Johnson\u2019s', wt:'200 g', price:145, mrp:170, cat:'Baby Care', em:'🍼', stock:12, badge:'', rating:4.6, pop:55},
+ {id:51,name:'Notebooks (Pack of 6)', brand:'Classmate', wt:'6×172 pg', price:180, mrp:210, cat:'Stationery', em:'📓', stock:20, badge:'new', rating:4.5, pop:52},
+ {id:52,name:'Ball Pens (Pack of 10)', brand:'Cello', wt:'10 pens', price:65, mrp:80, cat:'Stationery', em:'🖊️', stock:35, badge:'', rating:4.4, pop:57},
+ {id:53,name:'Dog Food (Adult)', brand:'Pedigree', wt:'1.2 kg', price:230, mrp:265, cat:'Pet Food', em:'🐶', stock:9, badge:'', rating:4.6, pop:48},
+ {id:54,name:'Cat Food (Ocean Fish)', brand:'Whiskas', wt:'1.2 kg', price:325, mrp:370, cat:'Pet Food', em:'🐱', stock:0, badge:'', rating:4.5, pop:44},
+ {id:55,name:'Monthly Ration Combo', brand:'SH Combo', wt:'Rice 10kg + Atta 5kg + Oil 1L + Toor Dal 1kg', price:1399, mrp:1650, cat:'Rice', em:'📦', stock:10, badge:'combo', rating:4.8, pop:87},
+ {id:56,name:'Breakfast Combo', brand:'SH Combo', wt:'Bread + Butter + Milk + Eggs (6)', price:169, mrp:205, cat:'Bakery', em:'📦', stock:14, badge:'combo', rating:4.6, pop:70},
+ {id:57,name:'Pooja Essentials Combo', brand:'SH Combo', wt:'Ghee 200ml + Camphor + Agarbatti + Kumkum', price:249, mrp:310, cat:'Spices', em:'🪔', stock:16, badge:'festival', rating:4.7, pop:66},
+ {id:58,name:'Tiffin Snacks Combo', brand:'SH Combo', wt:'Chips + Bhujia + Biscuits + Juice', price:225, mrp:270, cat:'Snacks', em:'📦', stock:12, badge:'combo', rating:4.5, pop:61},
+ {id:59,name:'Dry Fruits Festival Box', brand:'SH Select', wt:'500 g mixed', price:549, mrp:650, cat:'Snacks', em:'🪔', stock:7, badge:'festival', rating:4.8, pop:65},
+ {id:60,name:'Cleaning Combo', brand:'SH Combo', wt:'Detergent + Dishbar + Floor Cleaner', price:349, mrp:420, cat:'Home Cleaning', em:'📦', stock:11, badge:'combo', rating:4.6, pop:56}
+];
+const COUPONS = { 'FRESH10': {type:'pct', val:10, desc:'10% off'}, 'WELCOME50': {type:'flat', val:50, desc:'₹50 off'}, 'COMBO100': {type:'flat', val:100, min:999, desc:'₹100 off above ₹999'} };
+const REVIEWS = [
+ {name:'Lakshmi Devi', av:'👩', when:'2 days ago', stars:5, txt:'Vegetables are always fresh, just like the mandi. Delivery boy is very polite. Our whole street orders from here now!', ph:['🍅','🥦']},
+ {name:'Ravi Kumar', av:'👨', when:'1 week ago', stars:5, txt:'Ordered 25kg rice bag on WhatsApp, delivered within 2 hours. Best prices in town, better than the city supermarkets.', ph:['🍚']},
+ {name:'Fathima Begum', av:'🧕', when:'2 weeks ago', stars:4, txt:'Monthly combo pack saves me at least ₹300 every month. Quality is same as branded stores. Very happy.', ph:['📦','🌾']},
+ {name:'Srinivas Goud', av:'🧔', when:'3 weeks ago', stars:5, txt:'Same-day delivery is really useful for our hotel business. They never miss the evening slot.', ph:['🫒','🫘']},
+ {name:'Anitha', av:'👩‍🦱', when:'1 month ago', stars:5, txt:'Baby care items always in stock and genuine. COD option makes it easy for my mother to order too.', ph:['🍼']}
+];
+
+/* ============ STATE ============ */
+let PRODUCTS = store.get('jh_products', SEED_PRODUCTS);
+let cart     = store.get('jh_cart', {});        // {id: qty}
+let wishlist = store.get('jh_wish', []);
+let orders   = store.get('jh_orders', []);
+let user     = store.get('jh_user', null);
+let users    = store.get('jh_users', []);
+let addresses= store.get('jh_addr', []);
+let coupon   = null;
+let qtyDraft = {};                               // per-card qty selector
+let adminOn  = false;
+
+const save = () => { store.set('jh_products', PRODUCTS); store.set('jh_cart', cart); store.set('jh_wish', wishlist); store.set('jh_orders', orders); store.set('jh_user', user); store.set('jh_users', users); store.set('jh_addr', addresses); };
+const $ = id => document.getElementById(id);
+const rup = n => '₹' + Number(n).toLocaleString('en-IN');
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._x); t._x=setTimeout(()=>t.classList.remove('show'),2200); }
+
+/* ============ NAVIGATION ============ */
+function go(page){
+  document.querySelectorAll('.page').forEach(p=>p.classList.add('hide'));
+  $('page-'+page).classList.remove('hide');
+  document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active', a.dataset.nav===page));
+  window.scrollTo({top:0, behavior:'smooth'});
+  if(page==='shop') renderShop();
+  if(page==='cart') renderCart();
+  if(page==='checkout') renderCheckout();
+  if(page==='account') renderAccount();
+  if(page==='admin') renderAdmin();
+  if(page==='home') requestAnimationFrame(observeReveals);
+}
+function goCat(cat){ go('shop'); $('fCat').value=cat; $('fBrand').value=''; $('fPrice').value=''; renderShop(); }
+function goBadge(b){ go('shop'); $('fCat').value=''; window._badge=b; renderShop(); window._badge=null; }
+function toggleSearch(){ const w=$('searchWrap'); w.classList.toggle('open'); if(w.classList.contains('open')) $('searchInput').focus(); }
+function onSearch(v){ if(!$('page-shop')||$('page-shop').classList.contains('hide')) go('shop'); window._q=v; renderShop(); }
+
+/* ============ THEME ============ */
+function toggleTheme(){
+  const html=document.documentElement;
+  const next = html.dataset.theme==='dark' ? 'light' : 'dark';
+  html.dataset.theme=next; store.set('jh_theme', next);
+  $('themeBtn').textContent = next==='dark' ? '☀️' : '🌙';
+}
+(function initTheme(){
+  const saved = store.get('jh_theme', null);
+  const pref = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const t = saved || pref;
+  document.documentElement.dataset.theme=t;
+  document.addEventListener('DOMContentLoaded',()=>{ $('themeBtn').textContent = t==='dark'?'☀️':'🌙'; });
+})();
+
+/* ============ PRODUCT CARD ============ */
+function cardHTML(p){
+  const off = p.mrp>p.price ? Math.round((1-p.price/p.mrp)*100) : 0;
+  const q = qtyDraft[p.id]||1;
+  const stock = p.stock===0 ? '<span class="stock out">✖ Out of Stock</span>' : p.stock<=10 ? `<span class="stock low">⚠ Only ${p.stock} left</span>` : '<span class="stock in">✔ In Stock</span>';
+  const wished = wishlist.includes(p.id);
+  const dis = p.stock===0 ? 'disabled' : '';
+  return `<article class="pcard">
+    <div class="pimg">${p.em}
+      ${off?`<span class="off-tag">${off}% OFF</span>`:''}
+      <button class="wish ${wished?'on':''}" onclick="toggleWish(${p.id})" aria-label="Add to wishlist">${wished?'❤️':'🤍'}</button>
+    </div>
+    <span class="pbrand">${esc(p.brand)}</span>
+    <b class="pname">${esc(p.name)}</b>
+    <div class="pmeta"><span class="wt">${esc(p.wt)}</span><span class="stars">${'★'.repeat(Math.round(p.rating))}${'☆'.repeat(5-Math.round(p.rating))}</span> ${p.rating}</div>
+    <div class="pprice"><span class="now">${rup(p.price)}</span>${p.mrp>p.price?`<span class="mrp">${rup(p.mrp)}</span>`:''}</div>
+    ${stock}
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px">
+      <div class="qty"><button onclick="chQty(${p.id},-1)" aria-label="Decrease">−</button><span id="q-${p.id}">${q}</span><button onclick="chQty(${p.id},1)" aria-label="Increase">+</button></div>
+    </div>
+    <div class="pacts">
+      <button class="add" ${dis} onclick="addToCart(${p.id})">🧺 Add</button>
+      <button class="buy" ${dis} onclick="buyNow(${p.id})">Buy Now</button>
+    </div>
+  </article>`;
+}
+function chQty(id, d){ qtyDraft[id]=Math.max(1,Math.min(20,(qtyDraft[id]||1)+d)); const el=$('q-'+id); if(el) el.textContent=qtyDraft[id]; }
+function toggleWish(id){
+  const i=wishlist.indexOf(id);
+  if(i>-1){ wishlist.splice(i,1); toast('Removed from wishlist'); } else { wishlist.push(id); toast('❤️ Added to wishlist'); }
+  save(); updateBadges(); rerenderVisible();
+}
+function rerenderVisible(){
+  if(!$('page-home').classList.contains('hide')) renderHome();
+  if(!$('page-shop').classList.contains('hide')) renderShop();
+}
+
+/* ============ HOME RENDER ============ */
+function renderHome(){
+  $('homeCats').innerHTML = CATEGORIES.map(([c,em])=>`<div class="cat-tile" role="button" tabindex="0" onclick="goCat('${c.replace(/'/g,"\\'")}')" onkeydown="if(event.key==='Enter')goCat('${c.replace(/'/g,"\\'")}')"><span class="em">${em}</span><b>${c}</b></div>`).join('');
+  const row=(id,f)=>{ $(id).innerHTML = PRODUCTS.filter(f).slice(0,8).map(cardHTML).join('') || '<p class="page-sub">Nothing here yet.</p>'; };
+  row('rowDeals', p=>p.badge==='deal');
+  row('rowBest',  p=>p.badge==='best');
+  row('rowNew',   p=>p.badge==='new');
+  row('rowCombo', p=>p.badge==='combo');
+  $('revRow').innerHTML = REVIEWS.map(r=>`<div class="rev-card">
+    <div class="who"><span class="avatar">${r.av}</span><span><b>${r.name}</b><small>${r.when} · Verified buyer</small></span></div>
+    <span class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</span>
+    <p>“${r.txt}”</p>
+    <div class="rev-photos">${r.ph.map(e=>`<span>${e}</span>`).join('')}</div>
+  </div>`).join('');
+  const offers=['🔥 Today only: Fresh Apples 19% OFF','📦 Monthly Ration Combo — save ₹251','🪔 Festival Bazaar is LIVE','🚚 FREE delivery above ₹499','💬 WhatsApp orders: 99597 31120','⭐ Sona Masoori 25kg at best price'];
+  $('tickerTrack').innerHTML = [...offers,...offers].map(o=>`<span>${o}</span>`).join('');
+}
+
+/* ============ SHOP RENDER ============ */
+function initFilters(){
+  $('fCat').innerHTML = '<option value="">All Categories</option>'+CATEGORIES.map(([c])=>`<option>${c}</option>`).join('');
+  const brands=[...new Set(PRODUCTS.map(p=>p.brand))].sort();
+  $('fBrand').innerHTML = '<option value="">All Brands</option>'+brands.map(b=>`<option>${esc(b)}</option>`).join('');
+}
+function renderShop(){
+  let list=[...PRODUCTS];
+  const q=(window._q||'').trim().toLowerCase();
+  if(q) list=list.filter(p=>(p.name+' '+p.brand+' '+p.cat).toLowerCase().includes(q));
+  if(window._badge) list=list.filter(p=>p.badge===window._badge);
+  const c=$('fCat').value, b=$('fBrand').value, pr=$('fPrice').value, s=$('fSort').value;
+  if(c) list=list.filter(p=>p.cat===c);
+  if(b) list=list.filter(p=>p.brand===b);
+  if(pr){ const [lo,hi]=pr.split('-').map(Number); list=list.filter(p=>p.price>=lo&&p.price<=hi); }
+  if(s==='lo') list.sort((a,b)=>a.price-b.price);
+  else if(s==='hi') list.sort((a,b)=>b.price-a.price);
+  else if(s==='new') list.sort((a,b)=>b.id-a.id);
+  else list.sort((a,b)=>b.pop-a.pop);
+  $('resultCount').textContent = `${list.length} product${list.length!==1?'s':''} found${q?` for “${q}”`:''}`;
+  $('shopGrid').innerHTML = list.map(cardHTML).join('') || '<div class="empty"><span class="em">🔍</span><b>No products match your filters.</b><p>Try clearing the filters or searching something else.</p></div>';
+}
+
+/* ============ CART ============ */
+function addToCart(id, silent){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p||p.stock===0) return;
+  const q=qtyDraft[id]||1;
+  cart[id]=Math.min((cart[id]||0)+q, p.stock);
+  qtyDraft[id]=1; save(); updateBadges();
+  if(!silent){ toast(`🧺 ${p.name} added to cart`); rerenderVisible(); }
+}
+function buyNow(id){ addToCart(id,true); go('checkout'); }
+function setCartQty(id,d){
+  const p=PRODUCTS.find(x=>x.id===+id);
+  cart[id]=(cart[id]||0)+d;
+  if(cart[id]<=0) delete cart[id];
+  else if(p) cart[id]=Math.min(cart[id],p.stock);
+  save(); updateBadges(); renderCart();
+}
+function removeItem(id){ delete cart[id]; save(); updateBadges(); renderCart(); toast('Item removed'); }
+function cartTotals(){
+  let sub=0, items=0;
+  for(const id in cart){ const p=PRODUCTS.find(x=>x.id===+id); if(p){ sub+=p.price*cart[id]; items+=cart[id]; } }
+  let disc=0;
+  if(coupon){ const cp=COUPONS[coupon]; if(cp && (!cp.min || sub>=cp.min)) disc = cp.type==='pct' ? Math.round(sub*cp.val/100) : cp.val; }
+  const afterDisc=Math.max(0,sub-disc);
+  const delivery = sub===0 ? 0 : (afterDisc>=CONFIG.freeDeliveryAbove ? 0 : CONFIG.deliveryCharge);
+  const gst=Math.round(afterDisc*CONFIG.gstPercent/100);
+  return {sub,disc,delivery,gst,items,total:afterDisc+delivery+gst};
+}
+function summaryHTML(t){
+  return `<div class="sumrow"><span>Subtotal (${t.items} item${t.items!==1?'s':''})</span><span>${rup(t.sub)}</span></div>
+  ${t.disc?`<div class="sumrow"><span>Coupon (${coupon})</span><span class="disc">− ${rup(t.disc)}</span></div>`:''}
+  <div class="sumrow"><span>Delivery Charges</span><span>${t.delivery===0?'<span class="free">FREE</span>':rup(t.delivery)}</span></div>
+  <div class="sumrow"><span>GST (${CONFIG.gstPercent}%)</span><span>${rup(t.gst)}</span></div>
+  <div class="sumrow total"><span>Grand Total</span><span>${rup(t.total)}</span></div>`;
+}
+function renderCart(){
+  const ids=Object.keys(cart);
+  if(!ids.length){ $('cartBody').innerHTML=`<div class="empty"><span class="em">🧺</span><b>Your cart is empty.</b><p>Fresh deals are waiting in the aisles.</p><button class="btn btn-green" style="margin-top:14px" onclick="go('shop')">🛒 Start Shopping</button></div>`; return; }
+  const t=cartTotals();
+  $('cartBody').innerHTML = `<div class="cart-layout">
+    <div class="cart-list">${ids.map(id=>{ const p=PRODUCTS.find(x=>x.id===+id); if(!p) return ''; return `<div class="cart-item">
+      <span class="cimg">${p.em}</span>
+      <span class="cinfo"><b>${esc(p.name)}</b><small>${esc(p.brand)} · ${esc(p.wt)} · ${rup(p.price)} each</small>
+        <div class="qty" style="margin-top:6px"><button onclick="setCartQty(${id},-1)">−</button><span>${cart[id]}</span><button onclick="setCartQty(${id},1)">+</button></div>
+      </span>
+      <span class="cright"><span class="cprice">${rup(p.price*cart[id])}</span><button class="rm" onclick="removeItem(${id})">Remove</button></span>
+    </div>`;}).join('')}</div>
+    <div class="summary"><h3>Bill Details</h3>
+      <div class="coupon-row"><input id="couponInput" placeholder="Coupon code" value="${coupon||''}"><button onclick="applyCoupon()">Apply</button></div>
+      <div class="coupon-msg ${coupon?'ok':''}" id="couponMsg">${coupon?`✔ ${coupon} applied — ${COUPONS[coupon].desc}`:'Try FRESH10 or WELCOME50'}</div>
+      ${summaryHTML(t)}
+      ${t.delivery>0?`<p style="font-size:.78rem;color:var(--orange-dark);font-weight:700;margin-top:6px">Add ${rup(CONFIG.freeDeliveryAbove-(t.sub-t.disc))} more for FREE delivery 🚚</p>`:''}
+      <button class="btn btn-orange" style="width:100%;margin-top:12px" onclick="go('checkout')">Proceed to Checkout →</button>
+    </div></div>`;
+}
+function applyCoupon(){
+  const code=$('couponInput').value.trim().toUpperCase();
+  const m=$('couponMsg');
+  if(!code){ coupon=null; renderCart(); return; }
+  const cp=COUPONS[code];
+  const t0=cartTotals();
+  if(!cp){ m.className='coupon-msg err'; m.textContent='✖ Invalid coupon code'; coupon=null; return; }
+  if(cp.min && (t0.sub)<cp.min){ m.className='coupon-msg err'; m.textContent=`✖ ${code} needs a minimum order of ${rup(cp.min)}`; coupon=null; return; }
+  coupon=code; renderCart(); toast('🎉 Coupon applied!');
+}
+
+/* ============ CHECKOUT ============ */
+function renderCheckout(){
+  if(!Object.keys(cart).length){ go('cart'); return; }
+  $('ckSummary').innerHTML = summaryHTML(cartTotals());
+  if(user){ $('ckName').value=$('ckName').value||user.name||''; $('ckPhone').value=$('ckPhone').value||user.phone||''; }
+  if(addresses.length && !$('ckAddr').value){ const a=addresses[0]; $('ckAddr').value=a.addr; $('ckLand').value=a.land||''; $('ckPin').value=a.pin||''; }
+  document.querySelectorAll('#payMethods .pm input').forEach(r=>r.onchange=()=>{ document.querySelectorAll('#payMethods .pm').forEach(l=>l.classList.toggle('sel', l.querySelector('input').checked)); });
+}
+let ckLoc = null; // {lat, lng} captured via GPS
+function captureLocation(){
+  const st=$('locStatus'), btn=$('locBtn');
+  if(!navigator.geolocation){ st.style.color='var(--red)'; st.textContent='✖ This browser does not support location.'; return; }
+  st.style.color='var(--ink-soft)'; st.textContent='⏳ Location తీసుకుంటున్నాం… (allow permission)';
+  btn.disabled=true;
+  navigator.geolocation.getCurrentPosition(pos=>{
+    ckLoc={lat:+pos.coords.latitude.toFixed(6), lng:+pos.coords.longitude.toFixed(6)};
+    btn.disabled=false;
+    btn.textContent='✅ Location Captured';
+    st.style.color='var(--green)';
+    st.innerHTML=`✔ Location saved · <a href="${mapLink(ckLoc)}" target="_blank" rel="noopener" style="color:var(--green);text-decoration:underline">Map లో చూడండి</a>`;
+    toast('📍 Location captured!');
+  }, err=>{
+    btn.disabled=false;
+    st.style.color='var(--red)';
+    st.textContent = err.code===1 ? '✖ Permission denied — browser settings లో location allow చేయండి.' : '✖ Location దొరకలేదు. మళ్ళీ try చేయండి.';
+  }, {enableHighAccuracy:true, timeout:12000, maximumAge:30000});
+}
+const mapLink = l => `https://maps.google.com/?q=${l.lat},${l.lng}`;
+function validCk(){
+  const name=$('ckName').value.trim(), ph=$('ckPhone').value.trim(), addr=$('ckAddr').value.trim(), pin=$('ckPin').value.trim();
+  if(!name){ toast('Please enter your name'); return null; }
+  if(!/^[6-9]\d{9}$/.test(ph)){ toast('Enter a valid 10-digit mobile number'); return null; }
+  if(!addr){ toast('Please enter your delivery address'); return null; }
+  if(!/^\d{6}$/.test(pin)){ toast('Enter a valid 6-digit pincode'); return null; }
+  return {name, ph, addr, land:$('ckLand').value.trim(), pin, loc:ckLoc};
+}
+function orderLines(){ return Object.keys(cart).map(id=>{ const p=PRODUCTS.find(x=>x.id===+id); return {id:p.id,name:p.name,wt:p.wt,qty:cart[id],price:p.price}; }); }
+function placeOrder(){
+  const c=validCk(); if(!c) return;
+  const pay=document.querySelector('input[name="pay"]:checked').value;
+  const t=cartTotals();
+  const finish=()=>{
+    const order={ id:'SH'+Date.now().toString().slice(-8), when:new Date().toLocaleString('en-IN'), items:orderLines(), totals:t, customer:c, pay, status:0, coupon };
+    orders.unshift(order);
+    order.items.forEach(it=>{ const p=PRODUCTS.find(x=>x.id===it.id); if(p) p.stock=Math.max(0,p.stock-it.qty); });
+    if(c && !addresses.some(a=>a.addr===c.addr)) addresses.unshift({addr:c.addr,land:c.land,pin:c.pin});
+    cart={}; coupon=null; ckLoc=null; save(); updateBadges();
+    $('successMsg').innerHTML=`Order <b>#${order.id}</b> · ${rup(t.total)} · ${pay==='cod'?'Cash on Delivery':'Payment: '+pay.toUpperCase()}<br>We'll call you on <b>${c.ph}</b> to confirm. 🙏`;
+    go('success');
+    /* FIREBASE: when enabled, also write the order → db.collection('orders').add(order) */
+  };
+  if(pay==='upi'){
+    // UPI deep link — opens GPay/PhonePe/Paytm on mobile. EDIT CONFIG.upiId first.
+    const link=`upi://pay?pa=${CONFIG.upiId}&pn=${encodeURIComponent(CONFIG.storeName)}&am=${cartTotals().total}&cu=INR&tn=Grocery%20Order`;
+    window.location.href=link;
+    setTimeout(finish, 1200);
+  } else if(pay==='card'||pay==='netbanking'){
+    /* RAZORPAY: add the checkout.razorpay.com/v1/checkout.js script tag to the <head>,
+       set CONFIG.razorpayKey, then this block opens the real payment window. */
+    if(window.Razorpay){
+      new Razorpay({ key:CONFIG.razorpayKey, amount:t.total*100, currency:'INR', name:CONFIG.storeName,
+        description:'Grocery Order', prefill:{name:c.name, contact:c.ph}, theme:{color:'#2E7D32'},
+        handler:()=>finish() }).open();
+    } else { toast('Razorpay not configured yet — placing as COD'); finish(); }
+  } else finish();
+}
+function orderOnWhatsApp(){
+  const c=validCk(); if(!c) return;
+  const t=cartTotals();
+  const lines=orderLines().map(it=>`• ${it.name} (${it.wt}) × ${it.qty} = ₹${it.price*it.qty}`).join('\n');
+  const msg=`🛒 *New Order — ${CONFIG.storeName}*\n\n${lines}\n\n`+
+    `Subtotal: ₹${t.sub}${t.disc?`\nCoupon ${coupon}: −₹${t.disc}`:''}\nDelivery: ${t.delivery===0?'FREE':'₹'+t.delivery}\nGST: ₹${t.gst}\n*Grand Total: ₹${t.total}*\n\n`+
+    `👤 ${c.name}\n📞 ${c.ph}\n🏠 ${c.addr}${c.land?', Near '+c.land:''}\n📮 PIN: ${c.pin}${c.loc?`\n📍 Location: ${mapLink(c.loc)}`:''}\n💳 Payment: Cash on Delivery`;
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+/* ============ WISHLIST MODAL ============ */
+function openWishlist(){
+  const items=wishlist.map(id=>PRODUCTS.find(p=>p.id===id)).filter(Boolean);
+  modal(`<h3>❤️ Your Wishlist</h3>${items.length? items.map(p=>`
+    <div class="cart-item" style="margin-bottom:8px"><span class="cimg">${p.em}</span>
+    <span class="cinfo"><b>${esc(p.name)}</b><small>${esc(p.brand)} · ${rup(p.price)}</small></span>
+    <span class="cright"><button class="btn btn-green" style="padding:8px 14px;font-size:.85rem" onclick="addToCart(${p.id});closeModal();"${p.stock===0?' disabled':''}>Add</button>
+    <button class="rm" onclick="toggleWish(${p.id});openWishlist()">Remove</button></span></div>`).join('')
+  : '<div class="empty"><span class="em">🤍</span><b>Wishlist is empty.</b><p>Tap the heart on any product to save it here.</p></div>'}`);
+}
+function modal(html){ $('modalRoot').innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()"><div class="modal"><button class="close-x" onclick="closeModal()" aria-label="Close">✕</button>${html}</div></div>`; }
+function closeModal(){ $('modalRoot').innerHTML=''; }
+
+/* ============ ACCOUNT ============ */
+let accTab='orders';
+function setAccTab(t){ accTab=t; renderAccount(); }
+function renderAccount(){
+  const el=$('accountBody');
+  if(!user){
+    el.innerHTML=`<div class="auth-box" id="authBox">
+      <h2 id="authTitle">Welcome back 👋</h2>
+      <p class="page-sub" id="authSub">Login to track orders and save addresses.</p>
+      <div class="form-grid" style="grid-template-columns:1fr">
+        <div class="field hide" id="fName"><label>Full Name</label><input id="regName" placeholder="Your name"></div>
+        <div class="field"><label>Mobile Number</label><input id="authPhone" type="tel" maxlength="10" placeholder="10-digit mobile"></div>
+        <div class="field"><label>Password</label><input id="authPass" type="password" placeholder="••••••••"></div>
+      </div>
+      <button class="btn btn-green" style="width:100%;margin-top:14px" id="authBtn" onclick="doAuth()">Login</button>
+      <p class="sw">New customer? <button onclick="switchAuth()" id="authSwitch">Create an account</button></p>
+      <p class="sw" style="font-size:.72rem">Demo mode: accounts are stored on this device.<br>Enable Firebase in CONFIG for real OTP/email login.</p>
+    </div>`;
+    return;
+  }
+  const tabs=[['orders','📦 My Orders'],['wishlist','❤️ Wishlist'],['addresses','📍 Addresses'],['notifications','🔔 Notifications']];
+  let body='';
+  if(accTab==='orders'){
+    body = orders.length ? orders.map(o=>{
+      const steps=['Placed','Packed','Out for Delivery','Delivered'];
+      const stCls=['st-placed','st-packed','st-out','st-done'][o.status];
+      return `<div class="order-card">
+        <div class="oh"><span><b>#${o.id}</b><small style="display:block;color:var(--ink-soft)">${o.when} · ${o.items.length} items · ${o.pay.toUpperCase()}</small></span>
+        <span><span class="status-pill ${stCls}">${steps[o.status]}</span> <b style="font-family:var(--display)">${rup(o.totals.total)}</b></span></div>
+        <div class="track">${steps.map((s,i)=>`<span class="step ${i<=o.status?'done':''}">${s}</span>`).join('')}</div>
+        <details style="margin-top:10px;font-size:.85rem"><summary style="cursor:pointer;font-weight:700;color:var(--green)">View items</summary>
+        ${o.items.map(it=>`<div class="sumrow"><span>${esc(it.name)} × ${it.qty}</span><span>${rup(it.price*it.qty)}</span></div>`).join('')}</details>
+      </div>`; }).join('')
+    : `<div class="empty"><span class="em">📦</span><b>No orders yet.</b><p>Your order history and live tracking will appear here.</p></div>`;
+  }
+  if(accTab==='wishlist'){
+    const items=wishlist.map(id=>PRODUCTS.find(p=>p.id===id)).filter(Boolean);
+    body = items.length ? `<div class="prod-grid">${items.map(cardHTML).join('')}</div>` : `<div class="empty"><span class="em">🤍</span><b>Wishlist is empty.</b></div>`;
+  }
+  if(accTab==='addresses'){
+    body = (addresses.length ? addresses.map((a,i)=>`<div class="order-card"><div class="oh"><span>🏠 ${esc(a.addr)}${a.land?', near '+esc(a.land):''} — ${esc(a.pin)}</span><button class="rm" onclick="addresses.splice(${i},1);save();renderAccount()">Delete</button></div></div>`).join('') : `<div class="empty"><span class="em">📍</span><b>No saved addresses.</b><p>Addresses you use at checkout are saved automatically.</p></div>`);
+  }
+  if(accTab==='notifications'){
+    body = `<div class="order-card">🪔 <b>Festival Bazaar is live!</b> — Dry fruits, ghee & pooja combos at special prices.</div>
+    <div class="order-card">🚚 <b>Free delivery</b> on all orders above ₹499 this month.</div>
+    <div class="order-card">🎟️ Use coupon <b>WELCOME50</b> for ₹50 off your next order.</div>`;
+  }
+  el.innerHTML=`<h1 class="page-title">Namaste, ${esc(user.name)} 🙏</h1>
+    <p class="page-sub">${esc(user.phone)} · <button class="rm" onclick="logout()">Logout</button></p>
+    <div class="tabs">${tabs.map(([k,l])=>`<button class="${accTab===k?'active':''}" onclick="setAccTab('${k}')">${l}</button>`).join('')}</div>${body}`;
+}
+let regMode=false;
+function switchAuth(){
+  regMode=!regMode;
+  $('fName').classList.toggle('hide',!regMode);
+  $('authTitle').textContent=regMode?'Create account ✨':'Welcome back 👋';
+  $('authBtn').textContent=regMode?'Register':'Login';
+  $('authSwitch').textContent=regMode?'Login instead':'Create an account';
+  $('authSub').textContent=regMode?'Register once, order in seconds forever.':'Login to track orders and save addresses.';
+}
+function doAuth(){
+  const ph=$('authPhone').value.trim(), pw=$('authPass').value;
+  if(!/^[6-9]\d{9}$/.test(ph)){ toast('Enter a valid 10-digit mobile'); return; }
+  if(pw.length<4){ toast('Password must be at least 4 characters'); return; }
+  /* FIREBASE: replace this block with firebase.auth() phone-OTP or email sign-in when enabled */
+  if(regMode){
+    const nm=$('regName').value.trim(); if(!nm){ toast('Please enter your name'); return; }
+    if(users.some(u=>u.phone===ph)){ toast('Account exists — please login'); return; }
+    users.push({name:nm,phone:ph,pass:pw}); user={name:nm,phone:ph};
+    toast('🎉 Account created!');
+  } else {
+    const u=users.find(u=>u.phone===ph&&u.pass===pw);
+    if(!u){ toast('Wrong mobile or password'); return; }
+    user={name:u.name,phone:u.phone}; toast(`Welcome back, ${u.name}!`);
+  }
+  save(); renderAccount();
+}
+function logout(){ user=null; save(); renderAccount(); toast('Logged out'); }
+
+/* ============ ADMIN ============ */
+let adminTab='dash';
+function setAdminTab(t){ adminTab=t; renderAdmin(); }
+function renderAdmin(){
+  const el=$('adminBody');
+  if(!adminOn){
+    el.innerHTML=`<div class="auth-box"><h2>🔐 Admin Login</h2>
+      <p class="page-sub">Store staff only.</p>
+      <div class="field"><label>Admin Password</label><input id="admPass" type="password" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')adminLogin()"></div>
+      <button class="btn btn-green" style="width:100%;margin-top:14px" onclick="adminLogin()">Login to Dashboard</button>
+      <p class="sw" style="font-size:.72rem">Demo password: <b>admin123</b> — change it in CONFIG before going live.</p></div>`;
+    return;
+  }
+  const tabs=[['dash','📊 Dashboard'],['products','📦 Products'],['orders','🧾 Orders'],['customers','👥 Customers'],['coupons','🎟️ Coupons'],['banners','🖼️ Banners & Offers']];
+  let body='';
+  if(adminTab==='dash'){
+    const rev=orders.reduce((s,o)=>s+o.totals.total,0);
+    const low=PRODUCTS.filter(p=>p.stock>0&&p.stock<=10).length, out=PRODUCTS.filter(p=>p.stock===0).length;
+    const byCat={}; orders.forEach(o=>o.items.forEach(it=>{ const p=PRODUCTS.find(x=>x.id===it.id); const c=p?p.cat:'Other'; byCat[c]=(byCat[c]||0)+it.price*it.qty; }));
+    const top=Object.entries(byCat).sort((a,b)=>b[1]-a[1]).slice(0,5);
+    body=`<div class="admin-stats">
+      <div class="stat-card"><span class="em">💰</span><b>${rup(rev)}</b><small>Total Sales</small></div>
+      <div class="stat-card"><span class="em">🧾</span><b>${orders.length}</b><small>Orders</small></div>
+      <div class="stat-card"><span class="em">👥</span><b>${users.length}</b><small>Customers</small></div>
+      <div class="stat-card"><span class="em">📦</span><b>${PRODUCTS.length}</b><small>Products</small></div>
+      <div class="stat-card"><span class="em">⚠️</span><b>${low}</b><small>Low Stock</small></div>
+      <div class="stat-card"><span class="em">✖️</span><b>${out}</b><small>Out of Stock</small></div>
+    </div>
+    <div class="card-panel"><h3>📈 Sales by Category</h3>${top.length?top.map(([c,v])=>`<div class="sumrow"><span>${c}</span><span><b>${rup(v)}</b></span></div>`).join(''):'<p class="page-sub">Reports appear once orders come in.</p>'}</div>
+    <div class="card-panel"><h3>⚠️ Inventory Alerts</h3>${PRODUCTS.filter(p=>p.stock<=10).map(p=>`<div class="sumrow"><span>${p.em} ${esc(p.name)}</span><span class="stock ${p.stock===0?'out':'low'}">${p.stock===0?'OUT OF STOCK':p.stock+' left'}</span></div>`).join('')||'<p class="page-sub">All stocked up ✔</p>'}</div>`;
+  }
+  if(adminTab==='products'){
+    body=`<button class="btn btn-green" style="margin-bottom:12px" onclick="editProduct()">＋ Add Product</button>
+    <div class="tbl-wrap"><table class="admin-tbl"><thead><tr><th></th><th>Product</th><th>Category</th><th>Price</th><th>MRP</th><th>Stock</th><th>Actions</th></tr></thead><tbody>
+    ${PRODUCTS.map(p=>`<tr><td style="font-size:1.3rem">${p.em}</td><td><b>${esc(p.name)}</b><br><small style="color:var(--ink-soft)">${esc(p.brand)} · ${esc(p.wt)}</small></td><td>${p.cat}</td><td>${rup(p.price)}</td><td>${rup(p.mrp)}</td>
+    <td><span class="stock ${p.stock===0?'out':p.stock<=10?'low':'in'}">${p.stock}</span></td>
+    <td><button class="act" onclick="editProduct(${p.id})">Edit</button><button class="act del" onclick="delProduct(${p.id})">Delete</button></td></tr>`).join('')}
+    </tbody></table></div>`;
+  }
+  if(adminTab==='orders'){
+    body = orders.length ? `<div class="tbl-wrap"><table class="admin-tbl"><thead><tr><th>Order</th><th>Customer</th><th>Total</th><th>Payment</th><th>Status</th></tr></thead><tbody>
+    ${orders.map((o,i)=>`<tr><td><b>#${o.id}</b><br><small>${o.when}</small></td><td>${esc(o.customer.name)}<br><small>${esc(o.customer.ph)} · ${esc(o.customer.pin)}</small>${o.customer.loc?`<br><a href="${mapLink(o.customer.loc)}" target="_blank" rel="noopener" class="act">📍 Open Map</a>`:''}</td><td><b>${rup(o.totals.total)}</b></td><td>${o.pay.toUpperCase()}</td>
+    <td><select onchange="orders[${i}].status=+this.value;save();toast('Order status updated');renderAdmin()">
+    ${['Placed','Packed','Out for Delivery','Delivered'].map((s,si)=>`<option value="${si}" ${o.status===si?'selected':''}>${s}</option>`).join('')}</select></td></tr>`).join('')}
+    </tbody></table></div>` : '<div class="empty"><span class="em">🧾</span><b>No orders yet.</b></div>';
+  }
+  if(adminTab==='customers'){
+    body = users.length ? `<div class="tbl-wrap"><table class="admin-tbl"><thead><tr><th>Name</th><th>Mobile</th><th>Orders</th><th>Spent</th></tr></thead><tbody>
+    ${users.map(u=>{ const uo=orders.filter(o=>o.customer.ph===u.phone); return `<tr><td><b>${esc(u.name)}</b></td><td>${esc(u.phone)}</td><td>${uo.length}</td><td>${rup(uo.reduce((s,o)=>s+o.totals.total,0))}</td></tr>`;}).join('')}
+    </tbody></table></div>` : '<div class="empty"><span class="em">👥</span><b>No registered customers yet.</b></div>';
+  }
+  if(adminTab==='coupons'){
+    body=`<div class="tbl-wrap"><table class="admin-tbl"><thead><tr><th>Code</th><th>Discount</th><th>Condition</th></tr></thead><tbody>
+    ${Object.entries(COUPONS).map(([c,v])=>`<tr><td><b>${c}</b></td><td>${v.desc}</td><td>${v.min?'Min order '+rup(v.min):'—'}</td></tr>`).join('')}
+    </tbody></table></div>
+    <p class="page-sub" style="margin-top:10px">Add or edit coupons in the <b>COUPONS</b> object in the code (or move them to Firestore when Firebase is enabled).</p>`;
+  }
+  if(adminTab==='banners'){
+    body=`<div class="card-panel"><h3>🖼️ Homepage Banners</h3>
+      <div class="sumrow"><span>🪔 Festival Bazaar banner</span><span class="status-pill st-done">LIVE</span></div>
+      <div class="sumrow"><span>📦 Monthly Ration Combo banner</span><span class="status-pill st-done">LIVE</span></div>
+      <div class="sumrow"><span>🔥 Offers ticker (6 messages)</span><span class="status-pill st-done">LIVE</span></div>
+      <p class="page-sub" style="margin-top:10px">Banner text lives in <b>renderHome()</b> and the two <b>.offer-card</b> blocks. With Firebase Storage enabled, upload banner images and load them here.</p></div>`;
+  }
+  el.innerHTML=`<h1 class="page-title">🛠️ Admin Dashboard</h1>
+  <p class="page-sub">${CONFIG.storeName} · <button class="rm" onclick="adminOn=false;renderAdmin()">Logout</button></p>
+  <div class="tabs">${tabs.map(([k,l])=>`<button class="${adminTab===k?'active':''}" onclick="setAdminTab('${k}')">${l}</button>`).join('')}</div>${body}`;
+}
+function adminLogin(){
+  if($('admPass').value===CONFIG.adminPass){ adminOn=true; toast('Welcome, Admin 👋'); renderAdmin(); }
+  else toast('Wrong password');
+}
+function editProduct(id){
+  const p = id ? PRODUCTS.find(x=>x.id===id) : {name:'',brand:'',wt:'',price:'',mrp:'',cat:'Fruits',em:'🛒',stock:10,badge:'',rating:4.5,pop:50};
+  modal(`<h3>${id?'✏️ Edit':'＋ Add'} Product</h3><div class="form-grid">
+    <div class="field full"><label>Name</label><input id="epName" value="${esc(p.name)}"></div>
+    <div class="field"><label>Brand</label><input id="epBrand" value="${esc(p.brand)}"></div>
+    <div class="field"><label>Weight / Pack</label><input id="epWt" value="${esc(p.wt)}"></div>
+    <div class="field"><label>Selling Price ₹</label><input id="epPrice" type="number" value="${p.price}"></div>
+    <div class="field"><label>MRP ₹</label><input id="epMrp" type="number" value="${p.mrp}"></div>
+    <div class="field"><label>Category</label><select id="epCat">${CATEGORIES.map(([c])=>`<option ${p.cat===c?'selected':''}>${c}</option>`).join('')}</select></div>
+    <div class="field"><label>Stock</label><input id="epStock" type="number" value="${p.stock}"></div>
+    <div class="field"><label>Emoji / Image</label><input id="epEm" value="${p.em}" placeholder="🍎"></div>
+    <div class="field"><label>Tag</label><select id="epBadge">${['','deal','best','new','festival','combo'].map(b=>`<option value="${b}" ${p.badge===b?'selected':''}>${b||'none'}</option>`).join('')}</select></div>
+  </div>
+  <button class="btn btn-green" style="width:100%;margin-top:14px" onclick="saveProduct(${id||0})">💾 Save Product</button>`);
+}
+function saveProduct(id){
+  const data={ name:$('epName').value.trim(), brand:$('epBrand').value.trim(), wt:$('epWt').value.trim(),
+    price:+$('epPrice').value||0, mrp:+$('epMrp').value||0, cat:$('epCat').value, stock:+$('epStock').value||0,
+    em:$('epEm').value.trim()||'🛒', badge:$('epBadge').value, rating:4.5, pop:50 };
+  if(!data.name||!data.price){ toast('Name and price are required'); return; }
+  if(id){ Object.assign(PRODUCTS.find(x=>x.id===id), data); toast('Product updated'); }
+  else { data.id=Math.max(...PRODUCTS.map(p=>p.id))+1; PRODUCTS.push(data); toast('Product added'); }
+  save(); closeModal(); renderAdmin(); initFilters();
+}
+function delProduct(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  modal(`<h3>Delete product?</h3><p class="page-sub">${p.em} <b>${esc(p.name)}</b> will be removed from the store.</p>
+  <div style="display:flex;gap:10px;margin-top:12px"><button class="btn btn-ghost" style="flex:1" onclick="closeModal()">Cancel</button>
+  <button class="btn btn-orange" style="flex:1;background:var(--red)" onclick="PRODUCTS=PRODUCTS.filter(x=>x.id!==${id});save();closeModal();renderAdmin();initFilters();toast('Product deleted')">Delete</button></div>`);
+}
+
+/* ============ INFO PAGES ============ */
+const INFO = {
+ about:`<h1 class="page-title">About Us</h1><p>Sri Hanuman Super Market is your neighbourhood family store — built on one simple promise: <b>city-supermarket quality at honest local prices</b>. Every morning we source fresh fruits and vegetables from the mandi, stock trusted brands across every aisle, and deliver to your doorstep the same day.</p><p style="margin-top:10px">Whether you order on WhatsApp, over a phone call, or through this website, the same friendly team packs and delivers your groceries with care. 🙏</p>`,
+ privacy:`<h1 class="page-title">Privacy Policy</h1><p>We collect only the details needed to deliver your order — your name, mobile number and delivery address. We never sell or share your information with third parties. Payment details entered through Razorpay/UPI are processed securely by those providers and never stored by us. To have your data removed, call us at +91 99597 31120.</p>`,
+ terms:`<h1 class="page-title">Terms & Conditions</h1><p>Prices are inclusive of listed taxes and may change with market rates, especially for fresh produce. Orders placed before 6 PM qualify for same-day delivery within our service area. Free delivery applies on orders above ₹499. We reserve the right to limit quantities on offer items. By placing an order you agree to provide accurate contact and address details.</p>`,
+ refund:`<h1 class="page-title">Refund Policy</h1><p>Not happy with any item? Tell our delivery person at the door or call us within 24 hours — we'll replace it or refund the amount, no questions asked. For prepaid orders, refunds reach your account within 3–5 working days. Fresh produce concerns are resolved with instant replacement on the next delivery.</p>`,
+ faq:`<h1 class="page-title">FAQ</h1>
+ <div class="order-card"><b>Which areas do you deliver to?</b><p class="page-sub" style="margin:4px 0 0">Makthal town and nearby villages. Call us to confirm your area.</p></div>
+ <div class="order-card"><b>What is the delivery time?</b><p class="page-sub" style="margin:4px 0 0">Orders before 6 PM are delivered the same evening; later orders arrive next morning.</p></div>
+ <div class="order-card"><b>Is there a minimum order?</b><p class="page-sub" style="margin:4px 0 0">No minimum. Delivery is free above ₹499; below that, a ₹40 charge applies.</p></div>
+ <div class="order-card"><b>How can I pay?</b><p class="page-sub" style="margin:4px 0 0">Cash on delivery, UPI (GPay/PhonePe/Paytm), cards and net banking.</p></div>
+ <div class="order-card"><b>Can I order on WhatsApp?</b><p class="page-sub" style="margin:4px 0 0">Yes! Message your list to +91 99597 31120 — or build a cart here and tap “Send Order on WhatsApp”.</p></div>`
+};
+function showInfo(k){ $('infoBody').innerHTML=INFO[k]; go('info'); }
+
+/* ============ BADGES / REVEAL / INIT ============ */
+function updateBadges(){
+  const n=Object.values(cart).reduce((a,b)=>a+b,0);
+  [['cartCount',n],['cartCountM',n],['wishCount',wishlist.length]].forEach(([id,v])=>{ const el=$(id); el.textContent=v; el.classList.toggle('hide',v===0); });
+}
+function observeReveals(){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }),{threshold:.08});
+  document.querySelectorAll('.reveal:not(.vis)').forEach(el=>io.observe(el));
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  renderHome(); initFilters(); updateBadges(); observeReveals();
+  /* PWA: for installable app + offline, add a sw.js on your server and uncomment:
+     if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js'); */
+});
+</script>
+</body>
+</html>
