@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"GroceryStore","name":"Sri Hanuman Super Market","telephone":"+919959731120","priceRange":"₹","address":{"@type":"PostalAddress","streetAddress":"Main Road (edit in Contact page)","addressLocality":"Makthal","addressRegion":"Telangana","addressCountry":"IN"},"openingHours":"Mo-Su 07:00-21:30"}
+{"@context":"https://schema.org","@type":"GroceryStore","name":"Sri Hanuman Super Market","telephone":"+919959731120","priceRange":"₹","address":{"@type":"PostalAddress","streetAddress":"Surendar Reddy Complex, 5-279/18/19","addressLocality":"Makthal","addressRegion":"Telangana","postalCode":"509208","addressCountry":"IN"},"openingHours":"Mo-Su 07:00-21:30"}
 </script>
 <style>
 /* ============ DESIGN TOKENS ============ */
@@ -588,16 +588,17 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
         <h3>Get in touch</h3>
         <div class="contact-line"><span class="em">📞</span><span>+91 99597 31120<small>Phone — tap to call</small></span></div>
         <div class="contact-line"><span class="em">💬</span><span>+91 99597 31120<small>WhatsApp orders welcome</small></span></div>
-        <div class="contact-line"><span class="em">🏪</span><span id="storeAddress">Sri Hanuman Super Market, Main Road, Makthal, Narayanpet Dist., Telangana<small>Store address (editable in code — see CONFIG)</small></span></div>
+        <div class="contact-line"><span class="em">🏪</span><span id="storeAddress">Sri Hanuman Super Market, Surendar Reddy Complex, 5-279/18/19, Makthal, Telangana 509208<small>Store address</small></span></div>
         <div class="contact-line"><span class="em">🕘</span><span>7:00 AM – 9:30 PM<small>Open all 7 days</small></span></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
           <a class="btn btn-green" href="tel:+919959731120">📞 Click to Call</a>
+          <a class="btn btn-orange" href="https://maps.app.goo.gl/TYKA1H9QWQxAkUTk8" target="_blank" rel="noopener">📍 Get Directions</a>
           <a class="btn btn-wa" href="https://wa.me/919959731120" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg> WhatsApp Chat</a>
         </div>
       </div>
       <div class="map-box">
         <!-- EDIT: replace the q= value with your exact store location or paste your Google Maps embed code -->
-        <iframe id="gmap" title="Store location on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Makthal,+Narayanpet,+Telangana&output=embed"></iframe>
+        <iframe id="gmap" title="Store location on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Sri+Hanuman+Super+Market,+Makthal,+Narayanpet,+Telangana&output=embed"></iframe>
       </div>
     </div>
   </div>
@@ -678,7 +679,7 @@ const CONFIG = {
   gstPercent: 5,                       // shown as a line item on the bill
   razorpayKey: 'rzp_test_XXXXXXXXXXXX',// EDIT: your Razorpay Key ID (dashboard.razorpay.com)
   adminPass: 'admin123',               // EDIT: change before going live (or use Firebase Auth roles)
-  address: 'Main Road, Makthal, Narayanpet District, Telangana'
+  address: 'Surendar Reddy Complex, 5-279/18/19, Makthal, Telangana 509208'
 };
 
 /* ============ FIREBASE (optional — enables real login, cloud orders, storage)
