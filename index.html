@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Sri Hanuman Super Market — Fresh Groceries Delivered in Makthal</title>
-<meta name="description" content="Sri Hanuman Super Market — fresh fruits, vegetables, grocery, dairy & daily essentials with free same-day home delivery. Order on WhatsApp or call +91 99597 31120.">
-<meta name="keywords" content="supermarket, grocery delivery, fresh vegetables, fruits, Makthal, kirana, online grocery">
+<meta name="description" content="Sri Hanuman Super Market — rice, atta, oil, dals, spices, dairy & daily essentials with free same-day home delivery. Order on WhatsApp or call +91 99597 31120.">
+<meta name="keywords" content="supermarket, grocery delivery, rice, atta, cooking oil, Makthal, kirana, online grocery">
 <meta name="theme-color" content="#2E7D32">
 <meta property="og:title" content="Sri Hanuman Super Market">
 <meta property="og:description" content="Fresh groceries delivered to your doorstep. Free same-day delivery.">
@@ -375,7 +375,7 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
     </a>
     <div class="hdr-search" id="searchWrap">
       <span class="sicon">🔍</span>
-      <input id="searchInput" type="search" placeholder="Search rice, atta, oil, snacks…" aria-label="Search products" oninput="onSearch(this.value)">
+      <input id="searchInput" type="search" placeholder="Search rice, atta, oil, dal, tea…" aria-label="Search products" oninput="onSearch(this.value)">
     </div>
     <div class="hdr-acts">
       <button class="icon-btn mob-only" onclick="toggleSearch()" aria-label="Search">🔍</button>
@@ -388,8 +388,8 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
   <nav class="navrow container desk-only" id="topNav">
     <a href="#" data-nav="home" class="active" onclick="go('home');return false">Home</a>
     <a href="#" data-nav="shop" onclick="go('shop');return false">Shop All</a>
-    <a href="#" onclick="goCat('Fruits');return false">Fruits</a>
-    <a href="#" onclick="goCat('Vegetables');return false">Vegetables</a>
+    <a href="#" onclick="goCat('Atta & Flour');return false">Atta</a>
+    <a href="#" onclick="goCat('Cooking Oil');return false">Oil</a>
     <a href="#" onclick="goCat('Rice');return false">Rice</a>
     <a href="#" onclick="goCat('Dairy Products');return false">Dairy</a>
     <a href="#" onclick="goCat('Snacks');return false">Snacks</a>
@@ -409,9 +409,9 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
     <div class="container">
       <div class="hero-in">
         <div>
-          <span class="hero-eyebrow">🌿 Farm-fresh every morning · Trusted since day one</span>
+          <span class="hero-eyebrow">🏪 Quality groceries every day · Trusted since day one</span>
           <h1>Fresh Groceries <em>Delivered</em> to Your Doorstep</h1>
-          <p class="sub">Fruits, vegetables, rice, dals, dairy and every daily essential — hand-picked for quality and delivered the same day, right to your home.</p>
+          <p class="sub">Rice, atta, oils, dals, spices, dairy and every daily essential — hand-picked for quality and delivered the same day, right to your home.</p>
           <div class="hero-ctas">
             <button class="btn btn-green" onclick="go('shop')">🛒 Shop Now</button>
             <a class="btn btn-ghost" href="tel:+919959731120">📞 Call Now</a>
@@ -420,9 +420,9 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
         </div>
         <div class="hero-visual">
           <div class="crate">
-            <span>🍎</span><span>🥦</span><span>🥭</span>
-            <span>🍚</span><span>🥛</span><span>🍞</span>
-            <span>🧅</span><span>🍌</span><span>🫙</span>
+            <span>🍚</span><span>🌾</span><span>🫒</span>
+            <span>🫘</span><span>🥛</span><span>🍞</span>
+            <span>🧂</span><span>🍪</span><span>🫙</span>
           </div>
           <div class="hero-chip chip1">✅ 100% Fresh Quality</div>
           <div class="hero-chip chip2">⚡ Same-Day Delivery</div>
@@ -484,7 +484,7 @@ footer{background:var(--green-deep);color:#CFE4CE;margin-top:44px;padding-bottom
     <div class="why-grid">
       <div class="why-card"><span class="em">🚚</span><b>Free Home Delivery</b><p>Free delivery on every order above ₹499, anywhere in town.</p></div>
       <div class="why-card"><span class="em">⚡</span><b>Same Day Delivery</b><p>Order before 6 PM and get it delivered the same evening.</p></div>
-      <div class="why-card"><span class="em">🌿</span><b>Fresh Quality Products</b><p>Fruits & vegetables sourced fresh from the mandi every morning.</p></div>
+      <div class="why-card"><span class="em">✅</span><b>Genuine Quality Products</b><p>Only original branded stock — no duplicates, no expired items, ever.</p></div>
       <div class="why-card"><span class="em">🔒</span><b>Secure Payments</b><p>Pay by UPI, card or cash on delivery — 100% safe checkout.</p></div>
       <div class="why-card"><span class="em">↩️</span><b>Easy Returns</b><p>Not happy with an item? Instant replacement or refund.</p></div>
     </div>
@@ -673,7 +673,7 @@ const CONFIG = {
   storeName: 'Sri Hanuman Super Market',
   phone: '+919959731120',
   whatsapp: '919959731120',
-  upiId: 'jaihanuman@upi',            // EDIT: your UPI ID for direct UPI payments
+  upiId: '9959731120@ybl',            // EDIT: your UPI ID for direct UPI payments
   freeDeliveryAbove: 499,
   deliveryCharge: 40,
   gstPercent: 5,                       // shown as a line item on the bill
@@ -704,22 +704,13 @@ const store = {
 
 /* ============ DATA ============ */
 const CATEGORIES = [
-  ['Fruits','🍎'],['Vegetables','🥦'],['Rice','🍚'],['Atta & Flour','🌾'],['Cooking Oil','🫒'],
+  ['Rice','🍚'],['Atta & Flour','🌾'],['Cooking Oil','🫒'],
   ['Dal & Pulses','🫘'],['Spices','🌶️'],['Dairy Products','🥛'],['Bakery','🍞'],['Snacks','🍿'],
   ['Beverages','🧃'],['Biscuits','🍪'],['Chocolates','🍫'],['Frozen Foods','🧊'],['Personal Care','🧴'],
   ['Home Cleaning','🧹'],['Baby Care','🍼'],['Stationery','✏️'],['Pet Food','🐾']
 ];
 // badge: deal | best | new | festival | combo  ·  stock: number (0 = out)
 const SEED_PRODUCTS = [
- {id:1, name:'Fresh Apples (Shimla)', brand:'Farm Fresh', wt:'1 kg', price:129, mrp:160, cat:'Fruits', em:'🍎', stock:24, badge:'deal', rating:4.6, pop:98},
- {id:2, name:'Banana (Yelakki)', brand:'Farm Fresh', wt:'1 dozen', price:48, mrp:60, cat:'Fruits', em:'🍌', stock:40, badge:'best', rating:4.7, pop:95},
- {id:3, name:'Alphonso Mangoes', brand:'Ratnagiri', wt:'1 kg', price:349, mrp:420, cat:'Fruits', em:'🥭', stock:8, badge:'new', rating:4.9, pop:88},
- {id:4, name:'Pomegranate (Anar)', brand:'Farm Fresh', wt:'500 g', price:95, mrp:120, cat:'Fruits', em:'🔴', stock:15, badge:'', rating:4.4, pop:70},
- {id:5, name:'Tomatoes (Desi)', brand:'Local Mandi', wt:'1 kg', price:32, mrp:45, cat:'Vegetables', em:'🍅', stock:50, badge:'deal', rating:4.5, pop:97},
- {id:6, name:'Onions', brand:'Local Mandi', wt:'1 kg', price:38, mrp:50, cat:'Vegetables', em:'🧅', stock:60, badge:'best', rating:4.6, pop:99},
- {id:7, name:'Potatoes', brand:'Local Mandi', wt:'1 kg', price:30, mrp:40, cat:'Vegetables', em:'🥔', stock:55, badge:'best', rating:4.5, pop:96},
- {id:8, name:'Ladies Finger (Bhindi)', brand:'Local Mandi', wt:'500 g', price:28, mrp:36, cat:'Vegetables', em:'🫛', stock:20, badge:'new', rating:4.3, pop:65},
- {id:9, name:'Green Chillies', brand:'Local Mandi', wt:'250 g', price:18, mrp:24, cat:'Vegetables', em:'🌶️', stock:30, badge:'', rating:4.4, pop:80},
  {id:10,name:'Sona Masoori Rice', brand:'Sri Lalitha', wt:'25 kg', price:1349, mrp:1550, cat:'Rice', em:'🍚', stock:12, badge:'best', rating:4.8, pop:100},
  {id:11,name:'HMT Premium Rice', brand:'Kohinoor', wt:'10 kg', price:645, mrp:720, cat:'Rice', em:'🍚', stock:18, badge:'deal', rating:4.6, pop:85},
  {id:12,name:'Basmati Rice', brand:'India Gate', wt:'5 kg', price:589, mrp:699, cat:'Rice', em:'🍚', stock:10, badge:'festival', rating:4.7, pop:78},
@@ -774,7 +765,7 @@ const SEED_PRODUCTS = [
 ];
 const COUPONS = { 'FRESH10': {type:'pct', val:10, desc:'10% off'}, 'WELCOME50': {type:'flat', val:50, desc:'₹50 off'}, 'COMBO100': {type:'flat', val:100, min:999, desc:'₹100 off above ₹999'} };
 const REVIEWS = [
- {name:'Lakshmi Devi', av:'👩', when:'2 days ago', stars:5, txt:'Vegetables are always fresh, just like the mandi. Delivery boy is very polite. Our whole street orders from here now!', ph:['🍅','🥦']},
+ {name:'Lakshmi Devi', av:'👩', when:'2 days ago', stars:5, txt:'All branded items at prices lower than the city stores. Delivery boy is very polite. Our whole street orders from here now!', ph:['🍚','🫒']},
  {name:'Ravi Kumar', av:'👨', when:'1 week ago', stars:5, txt:'Ordered 25kg rice bag on WhatsApp, delivered within 2 hours. Best prices in town, better than the city supermarkets.', ph:['🍚']},
  {name:'Fathima Begum', av:'🧕', when:'2 weeks ago', stars:4, txt:'Monthly combo pack saves me at least ₹300 every month. Quality is same as branded stores. Very happy.', ph:['📦','🌾']},
  {name:'Srinivas Goud', av:'🧔', when:'3 weeks ago', stars:5, txt:'Same-day delivery is really useful for our hotel business. They never miss the evening slot.', ph:['🫒','🫘']},
@@ -782,7 +773,9 @@ const REVIEWS = [
 ];
 
 /* ============ STATE ============ */
+const SEED_VERSION = 2; // bump this whenever SEED_PRODUCTS changes
 let PRODUCTS = store.get('jh_products', SEED_PRODUCTS);
+if(store.get('jh_seedv',0)!==SEED_VERSION){ PRODUCTS=SEED_PRODUCTS; store.set('jh_products',SEED_PRODUCTS); store.set('jh_seedv',SEED_VERSION); }
 let cart     = store.get('jh_cart', {});        // {id: qty}
 let wishlist = store.get('jh_wish', []);
 let orders   = store.get('jh_orders', []);
@@ -884,7 +877,7 @@ function renderHome(){
     <p>“${r.txt}”</p>
     <div class="rev-photos">${r.ph.map(e=>`<span>${e}</span>`).join('')}</div>
   </div>`).join('');
-  const offers=['🔥 Today only: Fresh Apples 19% OFF','📦 Monthly Ration Combo — save ₹251','🪔 Festival Bazaar is LIVE','🚚 FREE delivery above ₹499','💬 WhatsApp orders: 99597 31120','⭐ Sona Masoori 25kg at best price'];
+  const offers=['🔥 Today only: Sunflower Oil 15% OFF','📦 Monthly Ration Combo — save ₹251','🪔 Festival Bazaar is LIVE','🚚 FREE delivery above ₹499','💬 WhatsApp orders: 99597 31120','⭐ Sona Masoori 25kg at best price'];
   $('tickerTrack').innerHTML = [...offers,...offers].map(o=>`<span>${o}</span>`).join('');
 }
 
@@ -1013,6 +1006,23 @@ function validCk(){
   return {name, ph, addr, land:$('ckLand').value.trim(), pin, loc:ckLoc};
 }
 function orderLines(){ return Object.keys(cart).map(id=>{ const p=PRODUCTS.find(x=>x.id===+id); return {id:p.id,name:p.name,wt:p.wt,qty:cart[id],price:p.price}; }); }
+
+/* UPI payment chooser — app-specific deep links work more reliably than plain upi:// */
+function showUpiModal(t, onDone){
+  const q=`pa=${CONFIG.upiId}&pn=${encodeURIComponent(CONFIG.storeName)}&am=${t.total}&cu=INR&tn=${encodeURIComponent('Order '+CONFIG.storeName)}`;
+  modal(`<h3>📱 UPI Payment — ${rup(t.total)}</h3>
+  <p class="page-sub">మీ UPI app select చేయండి. Payment పంపే UPI ID: <b>${CONFIG.upiId}</b></p>
+  <div style="display:grid;gap:10px;margin:14px 0">
+    <a class="btn btn-green" href="tez://upi/pay?${q}">🟢 Google Pay (GPay)</a>
+    <a class="btn" style="background:#5F259F;color:#fff" href="phonepe://pay?${q}">🟣 PhonePe</a>
+    <a class="btn" style="background:#00BAF2;color:#fff" href="paytmmp://pay?${q}">🔵 Paytm</a>
+    <a class="btn btn-ghost" href="upi://pay?${q}">📲 Any other UPI app</a>
+  </div>
+  <p class="page-sub" style="font-size:.8rem">App open అవ్వకపోతే — మీ UPI app open చేసి <b>${CONFIG.upiId}</b> కి ${rup(t.total)} పంపండి.</p>
+  <button class="btn btn-orange" style="width:100%;margin-top:8px" onclick="closeModal();window._upiDone()">✅ Payment చేశాను — Place Order</button>
+  <button class="btn btn-ghost" style="width:100%;margin-top:8px" onclick="closeModal()">Cancel</button>`);
+  window._upiDone = onDone;
+}
 function placeOrder(){
   const c=validCk(); if(!c) return;
   const pay=document.querySelector('input[name="pay"]:checked').value;
@@ -1028,10 +1038,7 @@ function placeOrder(){
     /* FIREBASE: when enabled, also write the order → db.collection('orders').add(order) */
   };
   if(pay==='upi'){
-    // UPI deep link — opens GPay/PhonePe/Paytm on mobile. EDIT CONFIG.upiId first.
-    const link=`upi://pay?pa=${CONFIG.upiId}&pn=${encodeURIComponent(CONFIG.storeName)}&am=${cartTotals().total}&cu=INR&tn=Grocery%20Order`;
-    window.location.href=link;
-    setTimeout(finish, 1200);
+    showUpiModal(t, finish);
   } else if(pay==='card'||pay==='netbanking'){
     /* RAZORPAY: add the checkout.razorpay.com/v1/checkout.js script tag to the <head>,
        set CONFIG.razorpayKey, then this block opens the real payment window. */
@@ -1217,7 +1224,6 @@ function adminLogin(){
   else toast('Wrong password');
 }
 function editProduct(id){
-  const p = id ? PRODUCTS.find(x=>x.id===id) : {name:'',brand:'',wt:'',price:'',mrp:'',cat:'Fruits',em:'🛒',stock:10,badge:'',rating:4.5,pop:50};
   modal(`<h3>${id?'✏️ Edit':'＋ Add'} Product</h3><div class="form-grid">
     <div class="field full"><label>Name</label><input id="epName" value="${esc(p.name)}"></div>
     <div class="field"><label>Brand</label><input id="epBrand" value="${esc(p.brand)}"></div>
@@ -1249,10 +1255,10 @@ function delProduct(id){
 
 /* ============ INFO PAGES ============ */
 const INFO = {
- about:`<h1 class="page-title">About Us</h1><p>Sri Hanuman Super Market is your neighbourhood family store — built on one simple promise: <b>city-supermarket quality at honest local prices</b>. Every morning we source fresh fruits and vegetables from the mandi, stock trusted brands across every aisle, and deliver to your doorstep the same day.</p><p style="margin-top:10px">Whether you order on WhatsApp, over a phone call, or through this website, the same friendly team packs and delivers your groceries with care. 🙏</p>`,
+ about:`<h1 class="page-title">About Us</h1><p>Sri Hanuman Super Market is your neighbourhood family store — built on one simple promise: <b>city-supermarket quality at honest local prices</b>. From rice and atta to spices and snacks, we stock trusted brands across every aisle and deliver to your doorstep the same day.</p><p style="margin-top:10px">Whether you order on WhatsApp, over a phone call, or through this website, the same friendly team packs and delivers your groceries with care. 🙏</p>`,
  privacy:`<h1 class="page-title">Privacy Policy</h1><p>We collect only the details needed to deliver your order — your name, mobile number and delivery address. We never sell or share your information with third parties. Payment details entered through Razorpay/UPI are processed securely by those providers and never stored by us. To have your data removed, call us at +91 99597 31120.</p>`,
- terms:`<h1 class="page-title">Terms & Conditions</h1><p>Prices are inclusive of listed taxes and may change with market rates, especially for fresh produce. Orders placed before 6 PM qualify for same-day delivery within our service area. Free delivery applies on orders above ₹499. We reserve the right to limit quantities on offer items. By placing an order you agree to provide accurate contact and address details.</p>`,
- refund:`<h1 class="page-title">Refund Policy</h1><p>Not happy with any item? Tell our delivery person at the door or call us within 24 hours — we'll replace it or refund the amount, no questions asked. For prepaid orders, refunds reach your account within 3–5 working days. Fresh produce concerns are resolved with instant replacement on the next delivery.</p>`,
+ terms:`<h1 class="page-title">Terms & Conditions</h1><p>Prices are inclusive of listed taxes and may change with market rates. Orders placed before 6 PM qualify for same-day delivery within our service area. Free delivery applies on orders above ₹499. We reserve the right to limit quantities on offer items. By placing an order you agree to provide accurate contact and address details.</p>`,
+ refund:`<h1 class="page-title">Refund Policy</h1><p>Not happy with any item? Tell our delivery person at the door or call us within 24 hours — we'll replace it or refund the amount, no questions asked. For prepaid orders, refunds reach your account within 3–5 working days. Any quality concern is resolved with instant replacement on the next delivery.</p>`,
  faq:`<h1 class="page-title">FAQ</h1>
  <div class="order-card"><b>Which areas do you deliver to?</b><p class="page-sub" style="margin:4px 0 0">Makthal town and nearby villages. Call us to confirm your area.</p></div>
  <div class="order-card"><b>What is the delivery time?</b><p class="page-sub" style="margin:4px 0 0">Orders before 6 PM are delivered the same evening; later orders arrive next morning.</p></div>
